@@ -1,0 +1,4 @@
+name: Kogan
+core: 8.x
+package: Custom modules
+type: module

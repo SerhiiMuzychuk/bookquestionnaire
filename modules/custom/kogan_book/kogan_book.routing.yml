@@ -1,0 +1,15 @@
+question_form.form:
+  path: '/questionnaire'
+  defaults:
+    _form: '\Drupal\kogan_book\Form\QuestionForm'
+    _title: 'Questionary'
+  requirements:
+    _permission: 'access content'
+    
+kogan_book.resultpage:
+  path: '/result'
+  defaults:
+    _title: 'Questionary'
+    _controller: '\Drupal\kogan_book\Controller\ResultController::bookResult'
+  requirements:
+    _permission: 'access content'

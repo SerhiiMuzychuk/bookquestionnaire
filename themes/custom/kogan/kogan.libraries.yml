@@ -1,0 +1,29 @@
+global-lib:
+  css:
+    theme:
+      stylesheets/kogan.style.css: {}
+      stylesheets/kogan.question.css: {}
+      
+  js:
+    js/kogan.script.js: {}
+    js/wizard.js: {} 
+    js/selected.js: {}
+
+    
+    
+bootstrap:
+  css:
+    theme:
+      stylesheets/bootstrap.min.css: {}
+      
+  js:
+    js/bootstrap.min.js: {}
+    js/bootstrap-toggle.min.js: {}
+    js/jquery.bootstrap.wizard.js: {}
+    js/jquery.bootstrap.wizard.min.js: {}
+ 
+   
+
+  dependencies:
+    - core/drupal.ajax
+    - core/jquery

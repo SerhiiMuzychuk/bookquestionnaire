@@ -1,0 +1,190 @@
+{{ form.form_build_id }}
+{{ form.form_token }}
+{{ form.form_id }}
+{{ form.subject }}
+{{ form.message }}
+
+<div class="plugin-form-pass">
+</div>
+
+
+<div id="rootwizard">
+  <div class="navbar">
+
+    <div class="navbar-inner">
+      <div class="container">
+  <ul>
+    <li><a href="#tab1" data-toggle="tab">First</a></li>
+    <li><a href="#tab2" data-toggle="tab">Second</a></li>
+    <li><a href="#tab3" data-toggle="tab">Third</a></li>
+    <li><a href="#tab4" data-toggle="tab">Forth</a></li>
+    <li><a href="#tab5" data-toggle="tab">Fifth</a></li>
+  </ul>
+   </div>
+    </div>
+  </div>
+    <div id="bar" class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+    </div>
+  <div class="tab-content">
+      <div class="tab-pane" id="tab1">
+        
+        <h2 class="text-center">Where do you now stand, to begin with?</h2>
+        <p>Please assess the current front end, back end and monetization mechanics of your business model</p>
+        <p class="disagree">Strongly disagree</p> <p class="agree">Strongly agree</p>
+        <div class="row">
+          <div class="form container">
+            {{ form.question1 }}
+            {{ form.question2 }}
+            {{ form.question3 }}
+            {{ form.question4 }}
+           	{{ form.question5 }}
+            {{ form.question6 }}
+        </div>
+        <p id="wizard-steps">Step <strong>1</strong> of 5</p>
+         
+        </div>
+         <div class="footer-wizard">
+    <ul class="pager wizard">
+      <li class="previous first" style="display:none;"><a href="#">First</a></li>
+      <li id="back" class="previous"><a href="#">Back</a></li>
+      <li class="next last" style="display:none;"><a href="#">Last</a></li>
+        <li class="next"><a href="#">Next</a></li>
+        
+      <!-- <li class="submit-form"><a href="#">Register</a></li> -->
+    </ul>
+    </div>
+      </div>
+      <div class="tab-pane" id="tab2">        
+        <h2 class="text-center">Where do you now stand, to begin with?</h2>
+        <p>Please assess the current front end, back end and monetization mechanics of your business model</p>
+        <p class="disagree">Strongly disagree</p> <p class="agree">Strongly agree</p>
+        <div class="row">
+          <div class="form container">
+            {{ form.question7 }}
+            {{ form.question8 }}
+            {{ form.question9 }}
+            {{ form.question10 }}
+          </div>
+          <p id="wizard-steps">Step <strong>2</strong> of 5</p>
+
+        </div>
+         <div class="footer-wizard">
+    <ul class="pager wizard">
+      <li class="previous first" style="display:none;"><a href="#">First</a></li>
+      <li id="back" class="previous"><a href="#">Back</a></li>
+      <li class="next last" style="display:none;"><a href="#">Last</a></li>
+        <li class="next"><a href="#">Next</a></li>
+        
+      <!-- <li class="submit-form"><a href="#">Register</a></li> -->
+    </ul>
+    </div>
+      </div>
+    <div class="tab-pane" id="tab3">
+      <h2 class="text-center">Where do you now stand, to begin with?</h2>
+      <p>Please assess the current front end, back end and monetization mechanics of your business model</p>
+      <p class="disagree">Strongly disagree</p> <p class="agree">Strongly agree</p>
+      <div class="row">
+        <div name='name' id="name" class="form container">
+          {{ form.question11 }}
+          {{ form.question12 }}
+          {{ form.question13 }}
+          {{ form.question14 }}
+          {{ form.question15 }}
+        <p id="wizard-steps">Step <strong>3</strong> of 5</p>
+           <!-- <div class="alert1-danger">Please enter your Last Name</div> -->
+        </div>
+      </div>
+      <div class="footer-wizard">
+    <ul class="pager wizard">
+      <li class="previous first" style="display:none;"><a href="#">First</a></li>
+      <li id="back" class="previous"><a href="#">Back</a></li>
+      <li class="next last" style="display:none;"><a href="#">Last</a></li>
+        <li class="next"><a href="#">Next</a></li>
+        
+      <!-- <li class="submit-form"><a href="#">Register</a></li> -->
+    </ul>
+    </div>
+    </div>
+    <div class="tab-pane" id="tab4">
+      <h2 class="text-center"> Where do you want to go? </h2>
+      <p>Please assess how the megatrends drive radical changes in your business or industry.</p>
+      <p class="disagree">Strongly disagree</p> <p class="agree">Strongly agree</p>
+      <div class="row">
+        <div name='name' id="name" class="form container">
+          {{ form.question101 }}
+          {{ form.question102 }}
+          {{ form.question103 }}
+          {{ form.question104 }}
+          {{ form.question105 }}
+          {{ form.question106 }}
+          {{ form.question107 }}
+          <p id="wizard-steps">Step <strong>4</strong> of 5</p>
+        </div>
+      </div>
+      <div class="footer-wizard">
+    <ul class="pager wizard">
+      <li class="previous first" style="display:none;"><a href="#">First</a></li>
+      <li id="back" class="previous"><a href="#">Back</a></li>
+      <li class="next last" style="display:none;"><a href="#">Last</a></li>
+        <li class="next"><a href="#">Next</a></li>
+        
+      <!-- <li class="submit-form"><a href="#">Register</a></li> -->
+    </ul>
+    </div>
+    </div>
+    <div class="tab-pane" id="tab5">
+      <h2 class="text-center"> Where do you want to go? </h2>
+      <p>Please assess how the megatrends drive radical changes in your business or industry.</p>
+      <p class="disagree">Strongly disagree</p> <p class="agree">Strongly agree</p>
+      <div class="row">
+        <div class="form container">
+          {{ form.question108 }}
+          {{ form.question109 }}
+          {{ form.question110 }}
+          {{ form.question111 }}
+          {{ form.question112 }}
+          {{ form.question113 }}
+          {{ form.question114 }}
+        <p id="wizard-steps">Step <strong>5</strong> of 5</p>
+        </div>
+      </div>
+      <div class="footer-wizard">
+    <ul class="pager wizard">
+      <li class="previous first" style="display:none;"><a href="#">First</a></li>
+      <li id="back" class="previous"><a href="#">Back</a></li>
+      <li class="next last" style="display:none;"><a href="#">Last</a></li>
+        <li class="next" style="display: none;"><a href="#">Next</a></li>
+        {{ form.actions.submit }}
+      <!-- <li class="submit-form"><a href="#">Register</a></li> -->
+    </ul>
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<div class="modal fade" id="my<a href="http://www.jqueryscript.net/tags.php?/Modal/">Modal</a>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+         </button>
+        <h4 class="modal-title" id="myModalLabel">Easy Wizard</h4>
+      </div>
+      <div class="modal-body wizard-content">
+        <div class="wizard-step"> Step 1 </div>
+        <div class="wizard-step"> Step 2 </div>
+        <div class="wizard-step"> Step 3 </div>
+        <div class="wizard-step"> Step 4 </div>
+        <div class="wizard-step"> Step 5 </div>
+      </div>
+      <div class="modal-footer wizard-buttons">
+        <!-- The wizard button will be inserted here. -->
+      </div>
+    </div>
+  </div>
+</div>

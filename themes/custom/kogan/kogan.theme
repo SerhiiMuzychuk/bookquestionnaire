@@ -1,0 +1,15 @@
+<?php
+
+
+function kogan_theme($existing, $type, $theme, $path) {
+  return [
+    'question_form' => [
+      'render element' => 'form',
+    ],
+    
+    // 'user_register_form' => [
+    //   'render element' => 'form',
+    // ],
+  ];
+
+}
