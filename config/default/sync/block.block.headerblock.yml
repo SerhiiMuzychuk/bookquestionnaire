@@ -1,0 +1,31 @@
+uuid: 7f7cd40c-12a4-4e80-99d5-c45269b911f5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:40548818-5e62-4623-85e6-1cab4d18226d'
+  module:
+    - block_content
+    - system
+  theme:
+    - kogan
+id: headerblock
+theme: kogan
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:40548818-5e62-4623-85e6-1cab4d18226d'
+settings:
+  id: 'block_content:40548818-5e62-4623-85e6-1cab4d18226d'
+  label: 'Header block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

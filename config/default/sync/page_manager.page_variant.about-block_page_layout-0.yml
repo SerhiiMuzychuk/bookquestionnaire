@@ -1,0 +1,25 @@
+uuid: d7c6e4c4-8909-4163-a912-8bc7492f4472
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.about
+  module:
+    - block_page_layout
+id: about-block_page_layout-0
+label: 'Block page (with Layout plugin integration)'
+variant: block_page_layout
+variant_settings:
+  blocks: {  }
+  id: block_page_layout
+  uuid: ae12257e-b364-486b-885f-70df7c6fc112
+  label: null
+  weight: 0
+  page_title: ''
+  layout: front_page
+  layout_settings: {  }
+page: about
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

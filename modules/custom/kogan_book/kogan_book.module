@@ -43,8 +43,7 @@ function kogan_book_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
  function register_alter_form_alter(&$form, &$form_state, $form_id) {
   switch ($form_id) {
      case 'user_register_form':
-       $form['account']['pass']['#process'][] = array('form_process_password_confirm', 'register_alter_password_confirm');
-       
+       $form['account']['pass']['#process'][] = array('form_process_password_confirm', 'register_alter_password_confirm');       
   }
   
 	
@@ -59,10 +58,13 @@ function kogan_book_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
 
 
 function kogan_book_theme($existing, $type, $theme, $path) {
-  
   return array(    
     'page_result' => array(
       'variables' => array(
+        'arrowx1' => null,
+        'arrowy1' => null,
+        'arrowx2' => null,
+        'arrowy2' => null,
         'frontx' => null,
         'backx' => null,
         'monetx' => null,
@@ -71,6 +73,36 @@ function kogan_book_theme($existing, $type, $theme, $path) {
         'monety' => null,
         'targetx' => null,
         'targety' => null,
+        'feedback' => null,
+        'question1' => null,
+        'question2' => null,
+        'question3' => null,
+        'question4' => null,
+        'question5' => null,
+        'question6' => null,
+        'question7' => null,
+        'question8' => null,
+        'question9' => null,
+        'question10' => null,
+        'question11' => null,
+        'question12' => null,
+        'question13' => null,
+        'question14' => null,
+        'question15' => null,
+        'question101' => null,
+        'question102' => null,
+        'question103' => null,
+        'question104' => null,
+        'question105' => null,
+        'question106' => null,
+        'question107' => null,
+        'question108' => null,
+        'question109' => null,
+        'question110' => null,
+        'question111' => null,
+        'question112' => null,
+        'question113' => null,
+        'question114' => null,
         ),
       'template' => 'page_result',
     ),     

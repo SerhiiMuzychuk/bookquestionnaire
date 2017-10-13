@@ -1,0 +1,22 @@
+uuid: 572c4097-e47a-49ba-a9ae-81135fb29bfb
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - kogan
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: kogan_powered
+theme: kogan
+region: header
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

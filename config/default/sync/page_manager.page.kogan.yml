@@ -1,0 +1,12 @@
+uuid: 0ea57873-3f71-4eac-830e-65791e036ed0
+langcode: en
+status: true
+dependencies: {  }
+id: kogan
+label: Kogan
+description: ''
+use_admin_theme: false
+path: /frontpage
+access_logic: and
+access_conditions: {  }
+parameters: {  }

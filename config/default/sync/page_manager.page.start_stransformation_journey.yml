@@ -1,0 +1,12 @@
+uuid: ad40c961-d1b9-40c4-bacc-2a3316dcf071
+langcode: en
+status: false
+dependencies: {  }
+id: start_stransformation_journey
+label: 'Start stransformation journey'
+description: ''
+use_admin_theme: false
+path: /questionnaire
+access_logic: and
+access_conditions: {  }
+parameters: {  }

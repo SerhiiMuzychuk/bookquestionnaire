@@ -1,0 +1,25 @@
+uuid: 24f7e246-794b-4120-9d42-3372c4a44491
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - kogan
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: kogan_branding
+theme: kogan
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 824ddcc3-ff54-4c1c-8653-5c30c50a113e
+langcode: en
+status: true
+dependencies:
+  module:
+    - kogan_book
+  theme:
+    - kogan
+id: footerblock
+theme: kogan
+region: footer
+weight: 0
+provider: null
+plugin: footer_block
+settings:
+  id: footer_block
+  label: 'Footer block'
+  provider: kogan_book
+  label_display: '0'
+visibility: {  }

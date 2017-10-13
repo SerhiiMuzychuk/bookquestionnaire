@@ -268,18 +268,15 @@ input, textarea, select, .uneditable-input {
 
 #wizard-steps {
   position: relative;
-  width: 50px;
-  z-index: 999;
-  text-align: center;
   color: #666;
-  margin: 0;
-  left: 40%;
-  width: 20% !important;
-  right: 40%;
+  width: 16%;
+  font-size: 16px !important;
+  margin-top: 30px;
+  float: right;
 }
 
 #wizard-steps strong {
-  color: #1377d5;
+  color: #ffbe18;
   font-weight: normal;
 }
 
@@ -484,14 +481,25 @@ input[type="text"], input[type="password"] {
 } 
 
 .tab-content h2 {
-  color: #1377d5;
-  font-weight: 700;
-  padding: 88px 0;
+  color: white;
+  padding: 20px 0;
   margin-bottom: 0;
   padding-bottom: 20px;
-  padding-top: 150px
-
+  float: left !important;
+  width: 100% !important;
+  text-align: none !important; 
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  text-transform: uppercase;
+  font-size: 24px !important;
 }
+
+.row {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
 
 .pager li > a:hover {
   background-color: #1377d5 !important;
@@ -540,15 +548,19 @@ input[type="text"], input[type="password"] {
 
 .footer-wizard .pager li > a {
   display: inline-block;
-  padding: 5px 14px;
-  border: 1px solid #1377d5;
-  border-radius: 3px;
-  margin-left: 10px;
+  color: #ffbe18;
+  border: none !important;
+  background: none !important;
+  padding: 0 !important;
+  border-bottom: 2px solid #ffbe18 !important;
+  border-radius: 0 !important;
+  font-size: 21px !important;
 }
 
 .footer-wizard .pager li > a:hover {
   cursor: pointer;
   color: white;
+  border-bottom: 2px solid #fff !important;
 }
 
 #user-register-form .footer-wizard .previous a {
@@ -636,7 +648,7 @@ input[type="text"], input[type="password"] {
   z-index: -100 !important;
   position: inherit;
   top: 0;
-  margin-top: -200px !important;
+  margin-top: -410px !important;
 }
 
 header {
@@ -805,7 +817,7 @@ header {
 }*/
 
 #tab1, #tab2, #tab3, #tab4, #tab5 {
-  text-align: center;
+  float: left;
 }
 
 .fieldset-wrapper {
@@ -1254,16 +1266,9 @@ body > div > main > div > div > div:nth-child(1) > div > ul > li:nth-child(2) {
   background: none !important;
 }
 
-#block-footerblock {
-  padding-top: 50px;
-}
 
-.hello {
-  font-size: 11px;
-  color: #cccfd2;
-  width: 100%;
-  float: left;
-}
+
+
 
 #block-footer ul li {
   list-style: none;
@@ -1298,9 +1303,8 @@ body > div > main > div > div > div:nth-child(1) > div > ul > li:nth-child(2) {
 }
 
 .fieldset-legend {
-  font-size: 13px;
-  font-weight: bold;
-  line-height: 20px; 
+  font-size: 16px;
+  line-height: 1.618em;
 }
 
 .fieldset-wrapper label {
@@ -1429,7 +1433,7 @@ abbr.warning:nth-child(3) {
 }
 
 .tab-content fieldset {
-  width: 40%;
+  width: 100%;
   margin: 0 auto;
   display: block;
 }

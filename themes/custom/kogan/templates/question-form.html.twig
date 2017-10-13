@@ -3,7 +3,7 @@
 {{ form.form_id }}
 {{ form.subject }}
 {{ form.message }}
-
+<div class="container">
 <div class="plugin-form-pass">
 </div>
 
@@ -12,7 +12,7 @@
   <div class="navbar">
 
     <div class="navbar-inner">
-      <div class="container">
+<div class="container">
   <ul>
     <li><a href="#tab1" data-toggle="tab">First</a></li>
     <li><a href="#tab2" data-toggle="tab">Second</a></li>
@@ -29,11 +29,12 @@
   <div class="tab-content">
       <div class="tab-pane" id="tab1">
         
-        <h2 class="text-center">Where do you now stand, to begin with?</h2>
-        <p>Please assess the current front end, back end and monetization mechanics of your business model</p>
-        <p class="disagree">Strongly disagree</p> <p class="agree">Strongly agree</p>
+        <h2>Where do you now stand, to begin with?</h2>
+        <p class="title-access">Please aссess the current front end, back end and monetization mechanics of your business model.</p>
+        <p class="agree">Strongly agree</p> 
+        <p class="disagree">Strongly disagree</p> 
         <div class="row">
-          <div class="form container">
+          <div class="form">
             {{ form.question1 }}
             {{ form.question2 }}
             {{ form.question3 }}
@@ -41,32 +42,31 @@
            	{{ form.question5 }}
             {{ form.question6 }}
         </div>
-        <p id="wizard-steps">Step <strong>1</strong> of 5</p>
          
         </div>
          <div class="footer-wizard">
     <ul class="pager wizard">
       <li class="previous first" style="display:none;"><a href="#">First</a></li>
-      <li id="back" class="previous"><a href="#">Back</a></li>
       <li class="next last" style="display:none;"><a href="#">Last</a></li>
         <li class="next"><a href="#">Next</a></li>
         
       <!-- <li class="submit-form"><a href="#">Register</a></li> -->
     </ul>
+    <p id="wizard-steps">Step <strong>1</strong> of 5</p>
     </div>
       </div>
       <div class="tab-pane" id="tab2">        
-        <h2 class="text-center">Where do you now stand, to begin with?</h2>
-        <p>Please assess the current front end, back end and monetization mechanics of your business model</p>
+        <h2 >Where do you now stand, to begin with?</h2>
+        <p class="title-access">Please aссess the current front end, back end and monetization mechanics of your business model.</p>
         <p class="disagree">Strongly disagree</p> <p class="agree">Strongly agree</p>
         <div class="row">
-          <div class="form container">
+          <div class="form">
             {{ form.question7 }}
             {{ form.question8 }}
             {{ form.question9 }}
             {{ form.question10 }}
           </div>
-          <p id="wizard-steps">Step <strong>2</strong> of 5</p>
+         
 
         </div>
          <div class="footer-wizard">
@@ -78,20 +78,21 @@
         
       <!-- <li class="submit-form"><a href="#">Register</a></li> -->
     </ul>
+     <p id="wizard-steps">Step <strong>2</strong> of 5</p>
     </div>
       </div>
     <div class="tab-pane" id="tab3">
-      <h2 class="text-center">Where do you now stand, to begin with?</h2>
-      <p>Please assess the current front end, back end and monetization mechanics of your business model</p>
+      <h2 >Where do you now stand, to begin with?</h2>
+      <p class="title-access">Please aссess the current front end, back end and monetization mechanics of your business model.</p>
       <p class="disagree">Strongly disagree</p> <p class="agree">Strongly agree</p>
       <div class="row">
-        <div name='name' id="name" class="form container">
+        <div name='name' id="name" class="form">
           {{ form.question11 }}
           {{ form.question12 }}
           {{ form.question13 }}
           {{ form.question14 }}
           {{ form.question15 }}
-        <p id="wizard-steps">Step <strong>3</strong> of 5</p>
+        
            <!-- <div class="alert1-danger">Please enter your Last Name</div> -->
         </div>
       </div>
@@ -104,14 +105,15 @@
         
       <!-- <li class="submit-form"><a href="#">Register</a></li> -->
     </ul>
+    <p id="wizard-steps">Step <strong>3</strong> of 5</p>
     </div>
     </div>
     <div class="tab-pane" id="tab4">
-      <h2 class="text-center"> Where do you want to go? </h2>
-      <p>Please assess how the megatrends drive radical changes in your business or industry.</p>
+      <h2> Where do you want to go? </h2>
+      <p class="title-access">Please assess how the megatrends drive radical changes in your business or industry.</p>
       <p class="disagree">Strongly disagree</p> <p class="agree">Strongly agree</p>
       <div class="row">
-        <div name='name' id="name" class="form container">
+        <div name='name' id="name" class="form">
           {{ form.question101 }}
           {{ form.question102 }}
           {{ form.question103 }}
@@ -119,7 +121,7 @@
           {{ form.question105 }}
           {{ form.question106 }}
           {{ form.question107 }}
-          <p id="wizard-steps">Step <strong>4</strong> of 5</p>
+          
         </div>
       </div>
       <div class="footer-wizard">
@@ -131,14 +133,15 @@
         
       <!-- <li class="submit-form"><a href="#">Register</a></li> -->
     </ul>
+    <p id="wizard-steps">Step <strong>4</strong> of 5</p>
     </div>
     </div>
     <div class="tab-pane" id="tab5">
-      <h2 class="text-center"> Where do you want to go? </h2>
-      <p>Please assess how the megatrends drive radical changes in your business or industry.</p>
+      <h2> Where do you want to go? </h2>
+      <p class="title-access">Please assess how the megatrends drive radical changes in your business or industry.</p>
       <p class="disagree">Strongly disagree</p> <p class="agree">Strongly agree</p>
       <div class="row">
-        <div class="form container">
+        <div class="form">
           {{ form.question108 }}
           {{ form.question109 }}
           {{ form.question110 }}
@@ -146,11 +149,11 @@
           {{ form.question112 }}
           {{ form.question113 }}
           {{ form.question114 }}
-        <p id="wizard-steps">Step <strong>5</strong> of 5</p>
+        
         </div>
       </div>
-      <div class="footer-wizard">
-    <ul class="pager wizard">
+    <div class="footer-wizard">
+      <ul class="pager wizard">
       <li class="previous first" style="display:none;"><a href="#">First</a></li>
       <li id="back" class="previous"><a href="#">Back</a></li>
       <li class="next last" style="display:none;"><a href="#">Last</a></li>
@@ -158,6 +161,7 @@
         {{ form.actions.submit }}
       <!-- <li class="submit-form"><a href="#">Register</a></li> -->
     </ul>
+    <p id="wizard-steps">Step <strong>5</strong> of 5</p>
     </div>
     </div>
     
@@ -188,3 +192,5 @@
     </div>
   </div>
 </div>
+
+ </div>

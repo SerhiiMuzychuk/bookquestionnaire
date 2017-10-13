@@ -1,0 +1,4 @@
+akf access invitation:
+  title: 'Invite participants'
+  description: 'Provides access to page Invite participants.'
+  restrict access: TRUE

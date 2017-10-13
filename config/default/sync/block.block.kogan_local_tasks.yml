@@ -1,0 +1,22 @@
+uuid: 635c6865-0aed-4f21-a8ff-c5d5c4fbf17f
+langcode: en
+status: false
+dependencies:
+  theme:
+    - kogan
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: kogan_local_tasks
+theme: kogan
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

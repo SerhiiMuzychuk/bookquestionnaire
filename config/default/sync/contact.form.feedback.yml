@@ -1,0 +1,14 @@
+uuid: b31735e0-0e56-4ad0-90b0-0575c1d82ceb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - book-questionnaire@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

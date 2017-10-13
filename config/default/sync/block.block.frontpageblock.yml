@@ -1,0 +1,31 @@
+uuid: ca264703-0bed-42b7-bea6-bd9531ba68f5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:22be6df9-b9d5-49a8-a3a5-71b7b2d28ac5'
+  module:
+    - block_content
+    - system
+  theme:
+    - kogan
+id: frontpageblock
+theme: kogan
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:22be6df9-b9d5-49a8-a3a5-71b7b2d28ac5'
+settings:
+  id: 'block_content:22be6df9-b9d5-49a8-a3a5-71b7b2d28ac5'
+  label: 'Frontpage block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

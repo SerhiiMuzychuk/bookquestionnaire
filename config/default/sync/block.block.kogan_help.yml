@@ -1,0 +1,22 @@
+uuid: a4d33fef-d4e7-42d9-a9db-437af5f2bdea
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - kogan
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: kogan_help
+theme: kogan
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

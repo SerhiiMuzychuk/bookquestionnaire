@@ -1,0 +1,22 @@
+uuid: 19fd1286-9df5-4019-94b6-7517d8409a8b
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - kogan
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: kogan_content
+theme: kogan
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

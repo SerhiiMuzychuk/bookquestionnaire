@@ -1,0 +1,14 @@
+uuid: bbdee57a-e3cd-4364-ae21-a978906108dd
+name: 'Book questionnaire'
+mail: book-questionnaire@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /frontpage
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

@@ -1,0 +1,61 @@
+uuid: c6a83ca8-6bad-4f8d-981b-8f1b88beac2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.questionnaire.body
+    - field.field.node.questionnaire.field_company
+    - field.field.node.questionnaire.field_company_size
+    - field.field.node.questionnaire.field_email
+    - field.field.node.questionnaire.field_name
+    - node.type.questionnaire
+  module:
+    - text
+    - user
+id: node.questionnaire.default
+targetEntityType: node
+bundle: questionnaire
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_company:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_company_size:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_email:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_name:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

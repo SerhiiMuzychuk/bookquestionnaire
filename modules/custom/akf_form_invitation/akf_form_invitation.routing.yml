@@ -1,0 +1,38 @@
+akf_form_invitation.form:
+ path: '/node/{node}/invitation'
+ defaults:
+   _title: 'Invite participants'
+   _form: '\Drupal\akf_form_invitation\Form\GenerateInvitation'
+ requirements:
+   _permission: 'akf access invitation'
+   _custom_access: '\Drupal\akf_form_invitation\Controller\InviteParamsController::admin_tab_access'
+
+akf_form_invitation.autocomplete:
+  path: '/invitation/autocomplete'
+  defaults:
+    _controller: '\Drupal\akf_form_invitation\Controller\AutocompleteController::handleAutocomplete'
+    _format: json
+  requirements:
+    _permission: 'akf access invitation'
+
+akf_form_invitation.invites:
+  path: '/invitation/{hash}'
+  defaults:
+    _title: 'Invitation to discussion'
+    _controller: '\Drupal\akf_form_invitation\Controller\InviteParamsController::inviteComplete'
+  requirements:
+    _permission: 'access content'
+
+akf_form_invitation.reject:
+  path: '/invitation/{hash}/reject'
+  defaults:
+    _controller: '\Drupal\akf_form_invitation\Controller\InviteParamsController::invitesReject'
+  requirements:
+    _permission: 'access content'
+
+akf_form_invitation.accepted:
+  path: '/invitation/{hash}/accepted'
+  defaults:
+    _controller: '\Drupal\akf_form_invitation\Controller\InviteParamsController::invitesAccepted'
+  requirements:
+    _permission: 'access content'

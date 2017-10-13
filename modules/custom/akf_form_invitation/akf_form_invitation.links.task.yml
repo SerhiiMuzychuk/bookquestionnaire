@@ -1,0 +1,4 @@
+akf_form_invitation.tab:
+  route_name: akf_form_invitation.form
+  title: 'Invite participants'
+  base_route: entity.node.canonical

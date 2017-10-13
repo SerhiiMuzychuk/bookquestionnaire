@@ -1,0 +1,26 @@
+uuid: 67fdfbd8-280c-48f6-b267-e335bafb9d5a
+langcode: en
+status: false
+dependencies:
+  module:
+    - kogan_book
+    - system
+  theme:
+    - kogan
+id: contentblock
+theme: kogan
+region: content
+weight: 0
+provider: null
+plugin: content_block
+settings:
+  id: content_block
+  label: 'Content block'
+  provider: kogan_book
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

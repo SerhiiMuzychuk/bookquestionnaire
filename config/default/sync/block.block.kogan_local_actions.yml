@@ -1,0 +1,20 @@
+uuid: e427079c-8ae0-4bf5-aad6-7526ba0cc9de
+langcode: en
+status: false
+dependencies:
+  theme:
+    - kogan
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: kogan_local_actions
+theme: kogan
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

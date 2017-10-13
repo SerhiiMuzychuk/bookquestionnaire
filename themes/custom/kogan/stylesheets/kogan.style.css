@@ -1,3 +1,4 @@
+
 html,
 body {
    margin:0;
@@ -7,7 +8,7 @@ body {
 }
 
 .layout-container {
-	min-height: calc(100% - 30px);
+	min-height: calc(100% - 100px);
   position:relative;
 }
 
@@ -23,6 +24,34 @@ footer {
 	height: 60px;   
 }
 
+.image-front {
+  background-image: url('/themes/custom/kogan/images/Radical-Business-Model-Transformation_artwork3-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-container {
+  margin-left: 19%;
+  padding-left: 15px !important;
+  width: calc(81% + 10px);
+}
+
+.image-header {
+  height: 50px;
+}
+
+
+.front .container {
+  margin-left: 19% !important;
+  margin-right: 37.5% !important;
+  width: 43.5% !important;
+}
+
+.container {
+  margin-left: 19% !important;
+  margin-right: 31% !important;
+  width: 50% !important;
+}
 
 #block-footerblock ul li {
   list-style: none;
@@ -93,7 +122,7 @@ footer {
   margin-left: 0;
   display: inline-block;
   float: left;
-  color: gray;
+  color: #666666;
 }
 
 
@@ -114,15 +143,19 @@ footer #block-footerblock ul {
   float: right;
   margin: 0px;
   padding: 0 !important;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .hello-text {
-	width: 70%;
+	width: 110%;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	color: gray;
+	color: #666666;
 	padding-left: 0px;
-	font-size: 12px;
+	font-size: 14px;
+}
+
+.front-link:hover {
+  border-bottom: none !important;
 }
 
 .hello {
@@ -133,14 +166,15 @@ footer #block-footerblock ul {
 #question-form legend {
 	float: left;
 	display: inline-block;
-	width: 35%;
+	width: 50%;
 	border-bottom: none;
+  color: white;
 }
 
 #question-form .fieldset-wrapper {
-	width: 60%;
+	width: 50%;
   float: right;
-  margin-top: 4px;
+  margin-top: 20px;
 }
 
 #question-form .fieldset-wrapper > div {
@@ -148,38 +182,62 @@ footer #block-footerblock ul {
 }
 
 #question-form input[type=radio] {
-	margin: 4px 30px 0 !important;
+	margin: 4px 35px 0 !important;
 }
 
 .radical {
   margin: 0 !important;
   color: white;
+  padding-top: 60px;
+  font-size: 44px;
 }
 
 .busin {
   margin: 0!important;
   color: #ffbe18;
+  font-size: 44px;
 }
 
 .trans {
   color: #ffbe18;
   margin: 0 !important;
+  font-size: 44px;
 }
 
 .disr {
-  font-size: 19px !important;
+  font-size: 23px !important;
   color: white;
   margin-top: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 .gain {
-  font-size: 19px !important;
+  font-size: 23px !important;
   color: white;
   margin-bottom: 0;
+  margin-top: 0 !important;
+  padding-top: 15px;
 }
 
 .image-front {
   height: 250px;
+  margin-top: 25px;
+}
+
+.main-text {
+  font-size: 17px !important;
+  line-height: 1.518em !important;
+  padding-top: 25px;
+  color: white;
+  font-family: Arial;
+}
+
+.front-link-text {
+  padding-top: 20px;
+  font-family: Arial;
+  font-style: italic;
+  font-size: 24px;
+  color: #ffbe18;
 }
 
 #block-headerblock > div.quickedit-field > div > img {
@@ -192,4 +250,330 @@ footer #block-footerblock ul {
 header {
   height: 100px;
   position: fixed;
+  width: 100%;
+  background-color: black;
+  padding-top: 50px;
 }
+
+body.front {
+  height: 100%;
+}
+
+html.bagr {
+  height: 100%;
+}
+
+.front header {
+  height: 0;
+  position: relative;
+}
+
+#block-headerblock > div:nth-child(1) > div:nth-child(1) > img:nth-child(2) {
+  height: 50px;
+  width: 100%;
+}
+
+main {
+  padding-top: 200px;
+}
+
+.has-error {
+  color: red;  
+}
+
+.tab-content {
+  padding-top: 250px;
+}
+
+svg {
+  background-color: white;
+}
+
+table {
+  margin-top: 70px;
+  background-color: white !important;
+}
+
+.front main {
+  padding-top: 20px !important;
+}
+
+.feedback {
+  padding-top: 50px;
+  display: none;
+  background-color: black;
+  width: 50%;
+}
+
+.feedback.open {
+  display: block;
+} 
+
+footer #block-footerblock ul {
+  font-size: 15px;
+}
+
+.add-feedback {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.add-feedback.remove {
+  display: none !important;
+} 
+
+.send-res {
+  width: 50%;
+  display: inline-block;
+  float: right;
+}
+
+.again-button {
+  float: right;
+  display: inline-block !important;
+  width: 45%;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #555;
+  cursor: pointer;
+  background-color: #ffbe18 !important;
+  font-size: 14px;
+  padding: 5px 22px;
+  border-radius: 3px;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.link-feedback {
+  display: block;
+  width: 80%;
+  text-align: center;
+  background-color: ;
+  color: #fff;
+  border: 1px solid #555;
+  cursor: pointer;
+  margin: 10px 1px;
+  background-color: #ffbe18 !important;
+  font-size: 14px;
+  padding: 5px 22px;
+  border-radius: 3px;
+  margin: 0;
+  margin-top: 50px;
+}
+
+#feedback-form .form-item {
+  display: inline-grid;
+}
+
+#feedback-form .form-item-company {
+  padding-top: 15px;
+}
+
+#feedback-form .form-item-company-size {
+  padding-top: 15px;
+}
+
+#feedback-form .form-item-title {
+  padding-top: 15px;
+}
+
+#feedback-form #edit-submit {
+  float: left;
+  display: inline-block !important;
+  width: 45%;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #555;
+  cursor: pointer;
+  background-color: #ffbe18 !important;
+  font-size: 14px;
+  padding: 5px 22px;
+  border-radius: 3px;
+  margin: 0;
+  margin-top: 25px;
+}
+
+.info-submit-feedback {
+  display: none;
+}
+
+.feedback.remove {
+  display: none;
+}
+
+.info-submit-feedback.active {
+  display: block;
+  margin-top: 50px;
+  color: #ffbe18;
+}
+
+#feedback-form .form-item  label {
+  color: white;
+}
+
+.image-header {
+  background-image: url('/themes/custom/kogan/images/Radical-Business-Model-Transformation_artwork3-2.jpg');
+}
+
+#block-footerblock {
+  padding-top: 40px;
+}
+
+.front-link {
+  color: #ffbe18 !important;
+  text-decoration: none;
+  border-bottom: 2px solid;
+}
+
+.title-access {
+  color: white;
+  float: left;
+  width: 100%;
+}
+
+.agree {
+  float: right;
+  width: 19%;
+  color: #666666;
+}
+
+.disagree {
+  float: right;
+  width: 25%;
+  color: #666666;
+}
+
+.radial-head {
+  color: white !important;
+}
+
+.business-head {
+  color: #ffbe18 !important;
+}
+
+.business-head:hover {
+  border-bottom: none !important;
+  color: #ffbe18 !important;
+  text-decoration: none !important;
+}
+.radial-head:hover {
+  border-bottom: none !important;
+  color: white !important;
+  text-decoration: none !important; 
+}
+
+.pager.wizard {
+  width: 20% !important;
+  float: left;
+  font-style: italic;
+  font-family: Arial;
+  font-size: 21px;
+}
+
+#tab1 .pager.wizard {
+  width: 4% !important;
+  float: left;
+  font-style: italic;
+  font-family: Arial;
+  font-size: 21px;
+}
+
+#block-headerblock {
+  background-color: black;
+}
+
+.contact-data {
+  line-height: 30px;
+  color: white;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.contacts {
+  font-size: 25px;
+}
+
+.test-results {
+  color: white;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1599px) and (min-width: 1100px) {
+  .radical {
+    padding-top: 20px;
+    font-size: 36px;
+  }
+
+  .busin {
+    font-size: 36px;
+  }  
+
+  .trans {
+    font-size: 36px;
+  }
+
+  .gain {
+    padding-top: 10px;
+    font-size: 19px !important;
+  }
+
+  .disr {
+    font-size: 19px !important;
+  }
+
+  .image-front {
+    height: 200px;
+    margin-top: 15px;
+  }
+
+  .main-text {
+    font-size: 12px !important;
+    line-height: 1.518em !important;
+    padding-top: 15px;
+    color: white;
+    font-family: Arial;
+  }
+
+  .front-link-text {
+    padding-top: 15px;
+    font-family: Arial-Boldita;
+    font-style: oblique;
+    font-size: 18px;
+    color: #ffbe18;
+  } 
+
+  #block-footerblock {
+    padding-top: 40px;
+  }
+
+  footer #block-footerblock ul {
+    width: 100%;
+    min-width: 400px;
+    float: right;
+    margin: 0px;
+    padding: 0 !important;
+    font-size: 12px;
+  }
+
+  .hello {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  .front-link {
+    border-bottom: 1px solid;
+  }
+
+
+
+  .hello-text {
+    width: 110%;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: gray;
+    padding-left: 0px;
+    font-size: 11px;
+  }
+
+
+}  

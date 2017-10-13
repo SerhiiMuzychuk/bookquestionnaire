@@ -1,0 +1,25 @@
+uuid: c5523698-3248-40d9-a7fa-b70a2e0e65d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.start_stransformation_journey
+  module:
+    - block_page_layout
+id: start_stransformation_journey-block_page_layout-0
+label: 'Block page (with Layout plugin integration)'
+variant: block_page_layout
+variant_settings:
+  blocks: {  }
+  id: block_page_layout
+  uuid: 024908d0-18fe-4249-9142-c5f8f42cebf4
+  label: null
+  weight: 0
+  page_title: ''
+  layout: front_page
+  layout_settings: {  }
+page: start_stransformation_journey
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

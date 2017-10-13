@@ -1,0 +1,22 @@
+uuid: 69033804-2a10-4c64-a028-ba1ca230871d
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - kogan
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: kogan_breadcrumbs
+theme: kogan
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

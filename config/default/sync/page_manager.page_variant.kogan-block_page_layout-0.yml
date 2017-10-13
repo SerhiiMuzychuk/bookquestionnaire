@@ -1,0 +1,25 @@
+uuid: 11e37e83-ca78-4ef8-af93-6decb14aecb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.kogan
+  module:
+    - block_page_layout
+id: kogan-block_page_layout-0
+label: 'Block page (with Layout plugin integration)'
+variant: block_page_layout
+variant_settings:
+  blocks: {  }
+  id: block_page_layout
+  uuid: f8973036-f209-454d-9606-97a5b33a3152
+  label: null
+  weight: 0
+  page_title: ''
+  layout: front_page
+  layout_settings: {  }
+page: kogan
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

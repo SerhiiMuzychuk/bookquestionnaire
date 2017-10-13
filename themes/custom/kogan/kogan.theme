@@ -5,11 +5,104 @@ function kogan_theme($existing, $type, $theme, $path) {
   return [
     'question_form' => [
       'render element' => 'form',
-    ],
-    
-    // 'user_register_form' => [
-    //   'render element' => 'form',
-    // ],
+    ],    
   ];
+}
+
+function kogan_preprocess_node__questionnaire(&$variables) {
+
+	$variables['title'] = $variables['node']->get('title')->value;
+	$variables['name'] = $variables['node']->get('field_name')->value;
+	$variables['company'] = $variables['node']->get('field_company')->value;
+	$variables['company_size'] = $variables['node']->get('field_company_size')->value;
+	$variables['created'] = $variables['node']->get('created')->value;
+
+	$keys = [
+	  'frontx',
+    'backx',
+    'monetx',
+    'fronty',
+    'backy',
+    'monety',
+    'targetx',
+    'targety',
+    'arrowx1',
+		'arrowy1',
+		'arrowx2',
+		'arrowy2',
+    'question1',
+    'question2',
+    'question3',
+    'question4',
+    'question5',
+    'question6',
+    'question7',
+    'question8',
+    'question9',
+    'question10',
+    'question11',
+    'question12',
+    'question13',
+    'question14',
+    'question15',
+    'question101',
+    'question102',
+    'question103',
+    'question104',
+    'question105',
+    'question106',
+    'question107',
+    'question108',
+    'question109',
+    'question110',
+    'question111',
+    'question112',
+    'question113',
+    'question114',
+	];
+
+	$val = \Drupal::state()->getMultiple($keys);
+	$variables['frontx'] = $val['frontx'];
+	$variables['backx'] = $val['backx'];
+	$variables['monetx'] = $val['monetx'];
+	$variables['fronty'] = $val['fronty'];
+	$variables['backy'] = $val['backy'];
+	$variables['monety'] = $val['monety'];
+	$variables['targetx'] = $val['targetx'];
+	$variables['targety'] = $val['targety'];
+	$variables['arrowx1'] = $val['arrowx1'];
+	$variables['arrowy1'] = $val['arrowy1'];
+	$variables['arrowx2'] = $val['arrowx2'];
+	$variables['arrowy2'] = $val['arrowy2'];
+	$variables['question1'] = $val['question1'];
+	$variables['question2'] = $val['question2'];
+	$variables['question3'] = $val['question3'];
+	$variables['question4'] = $val['question4'];
+	$variables['question5'] = $val['question5'];
+	$variables['question6'] = $val['question6'];
+	$variables['question7'] = $val['question7'];
+	$variables['question8'] = $val['question8'];
+	$variables['question9'] = $val['question9'];
+	$variables['question10'] = $val['question10'];
+	$variables['question11'] = $val['question11'];
+	$variables['question12'] = $val['question12'];
+	$variables['question13'] = $val['question13'];
+	$variables['question14'] = $val['question14'];
+	$variables['question15'] = $val['question15'];
+	$variables['question101'] = $val['question101'];
+	$variables['question102'] = $val['question102'];
+	$variables['question103'] = $val['question103'];
+	$variables['question104'] = $val['question104'];
+	$variables['question105'] = $val['question105'];
+	$variables['question106'] = $val['question106'];
+	$variables['question107'] = $val['question107'];
+	$variables['question108'] = $val['question108'];
+	$variables['question109'] = $val['question109'];
+	$variables['question110'] = $val['question110'];
+	$variables['question111'] = $val['question111'];
+	$variables['question112'] = $val['question112'];
+	$variables['question113'] = $val['question113'];
+	$variables['question114'] = $val['question114'];
+
 
 }
