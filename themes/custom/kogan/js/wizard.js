@@ -702,12 +702,15 @@
       
         $('.link-feedback').click(function() {
           $('.feedback').addClass('open');
+          $('.again-button').addClass('open');
           $('.add-feedback').addClass('remove');
         });
 
         $('#feedback-form #edit-submit').click(function() {
           $('.info-submit-feedback').addClass('active');
           $('.feedback').addClass('remove');
+          $('.again-button').removeClass('open');
+          $('.again-button').addClass('sending');
         });
 
 

@@ -252,9 +252,7 @@ input, textarea, select, .uneditable-input {
   position: relative;
 }
 
-.carousel, .item, .active {
-  height: 100%;
-}
+
 
 .terms-condition {
   margin-bottom: 25px;
@@ -271,7 +269,7 @@ input, textarea, select, .uneditable-input {
   color: #666;
   width: 16%;
   font-size: 16px !important;
-  margin-top: 30px;
+  margin-top: 20px;
   float: right;
 }
 
@@ -360,8 +358,12 @@ input.form-control {
   font-size: 16px;
 }
 
+#feedback-form input {
+  border-radius: 4px !important;
+}
+
 input[type="text"], input[type="password"] {
-  border: solid 1px #d7d7d7;
+  border: solid 1px #ffbe18;
   padding-left: 10px;
 }
 
@@ -420,38 +422,6 @@ input[type="text"], input[type="password"] {
   font-size: 30px;
 }
 
-/*.nav-pills li a {
-  text-indent: -999999px;
-  padding: 1px 0;
-  line-height: 2px;
-}
-
-.nav-pills > li a {
-  border: 0 !important;
-  text-transform: uppercase;
-  color: #FFFFFF !important;
-  font-size: 12px;
-}
-
-.nav-pills > li > a {
-  border-radius: 0;
-}
-
-.nav-pills > li + li {
-  margin-left: 0;
-}
-
-.nav-pills > li {
-  text-align: center;
-}
-
-.nav-pills > li + li {
-  margin-left: 0;
-}
-
-.nav-pills > li + li {
-  margin-left: 0;
-}*/
 
 .pill-warpper h2 {
   margin-top: 150px;
@@ -484,14 +454,14 @@ input[type="text"], input[type="password"] {
   color: white;
   padding: 20px 0;
   margin-bottom: 0;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   float: left !important;
   width: 100% !important;
   text-align: none !important; 
   padding-left: 0 !important;
   margin-left: 0 !important;
   text-transform: uppercase;
-  font-size: 24px !important;
+  font-size: 22px !important;
 }
 
 .row {
@@ -859,9 +829,6 @@ header {
   margin-left: 70px;
 }
 
-/*.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
-  background-color: white !important;
-}*/
 
 .nav-pills>li>a {
   border-radius: 30px !important;
@@ -1289,21 +1256,39 @@ body > div > main > div > div > div:nth-child(1) > div > ul > li:nth-child(2) {
 
 .pager #edit-submit {
   display: inline-block;
-  padding: 5px 14px;
-  border: 1px solid #1377d5;
-  border-radius: 3px;
-  margin-left: 10px;
-  color: #1377d5;
-  background-color: white;
+  color: #ffbe18;
+  border: none !important;
+  background: none !important;
+  padding: 0 !important;
+  border-bottom: 2px solid #ffbe18 !important;
+  border-radius: 0 !important;
+  font-size: 15px !important;
+  font-size: 21px !important;
+  float: left;
+  display: inline-block;
+  margin-left: 15%;
+}
+
+#tab5 .pager.wizard {
+  width: 71% !important;
+  float: left;
+  font-style: italic;
+  font-family: Arial;
+  font-size: 21px;
+}
+
+#tab5 .footer-wizard .pager li > a {
+  float: left;
+  width: 8%;
 }
 
 .pager #edit-submit:hover {
   color: white;
-  background-color: #1377d5;
+  border-bottom: 2px solid white !important;
 }
 
 .fieldset-legend {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.618em;
 }
 
@@ -1474,6 +1459,63 @@ tr.draggable:nth-child(4) > td:nth-child(2) {
 
 #block-footer ul li a {
   color: black;
+
+}
+
+
+@media screen and (max-width: 1599px) and (min-width: 1100px) {
+  .fieldset-legend {
+    font-size: 13px;
+    line-height: 1.618em;
+  }
+
+  .tab-content {
+    padding-top: 230px;
+  }
+
+
+
+  .footer-wizard .pager li > a {
+    font-size: 15px !important;
+  }
+
+  .tab-content legend {
+    margin-bottom: 10px;
+  }
+
+  .tab-content legend {
+    line-height: 14px !important;
+    margin-top: 10px;
+  }
+
+  #tab5 .footer-wizard .pager li > a {
+    width: 9%;
+  }
+
+  .pager #edit-submit {
+    font-size: 15px !important;
+  }
+
+  .tab-content h2 {
+    color: white;
+    padding: 0;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    float: left !important;
+    width: 100% !important;
+    text-align: none !important; 
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    text-transform: uppercase;
+    font-size: 17px !important;
+    margin-top: 10px;
+  }
+
+   #wizard-steps {
+    width: 14%;
+    font-size: 13px !important;
+    margin-top: 20px;
+  }
 
 }
 
@@ -1701,10 +1743,3 @@ tr.draggable:nth-child(4) > td:nth-child(2) {
   padding: 1px 0px !important;
   cursor: context-menu !important;
 }
-
-/*.nav>li>a.doing,
-.nav>li>a.doing:before,
-.nav>li>a.doing:after {
-  background-color: red !important;
-  border: red !important;
-}*/

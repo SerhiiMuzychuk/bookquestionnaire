@@ -419,7 +419,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
     $form['actions'] = array('#type' => 'actions');
     $form['actions']['submit'] = array(
       '#type' => 'submit',
-      '#value' => t('Save changes'),
+      '#value' => t('Save answers and show me the path'),
       '#tableselect' => TRUE,
     );
 
@@ -1166,17 +1166,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
     $targetx = ($custdigit + $custprob)/$cust2; 
     $targety = ($incdigit + $incprob)/$inc2;
 
-    
 
-    // kint($form_state->getValues());
-    // kint($frontx);
-    // kint($fronty);
-    // kint($backx);
-    // kint($backy);
-    // kint($monetx);
-    // kint($monety);
-    // kint($targetx);
-    // kint($targety);
 
     $form_state->setRedirect('kogan_book.resultpage', [
       'frontx' => $frontx,

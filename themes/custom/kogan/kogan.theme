@@ -5,8 +5,24 @@ function kogan_theme($existing, $type, $theme, $path) {
   return [
     'question_form' => [
       'render element' => 'form',
-    ],    
+    ],
+	
+	'contact_message_feedback_form' => [
+      'render element' => 'form',
+    ]    
   ];
+}
+
+function kogan_preprocess_page(&$variables) {
+  $svg = file_get_contents(drupal_get_path('theme', 'kogan') . '/images/my.svg');
+  $variables['some_svg'] = $svg;
+
+  global $base_url;
+  // $variables['base_url'] = $base_url;
+  // $share = $variables['node']->get('nid')->value;
+  
+  // $variables['share_facebook'] = $share;   
+  // kint($share);
 }
 
 function kogan_preprocess_node__questionnaire(&$variables) {
@@ -17,8 +33,9 @@ function kogan_preprocess_node__questionnaire(&$variables) {
 	$variables['company_size'] = $variables['node']->get('field_company_size')->value;
 	$variables['created'] = $variables['node']->get('created')->value;
 
-	$keys = [
-	  'frontx',
+
+  $keys = [
+    'frontx',
     'backx',
     'monetx',
     'fronty',
@@ -27,9 +44,9 @@ function kogan_preprocess_node__questionnaire(&$variables) {
     'targetx',
     'targety',
     'arrowx1',
-		'arrowy1',
-		'arrowx2',
-		'arrowy2',
+	'arrowy1',
+	'arrowx2',
+	'arrowy2',
     'question1',
     'question2',
     'question3',

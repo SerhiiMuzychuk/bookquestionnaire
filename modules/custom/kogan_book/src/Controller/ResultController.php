@@ -60,25 +60,34 @@ class ResultController extends ControllerBase {
     $question113 = \Drupal::request()->query->get('question113');
     $question114 = \Drupal::request()->query->get('question114');
 
-    $x = $frontx*100 + 100;
-    $x1 = $backx*100 + 100;
-    $x2 = $monetx*100 + 100;
-    $y = 600 - $fronty*100;
-    $y1 = 600 - $backy*100;
-    $y2 = 600 - $monety*100;
-    $z1 = $targetx*100 + 100;
-    $z2 = 600 - $targety*100;
+    $x = $frontx*14+13;
+    $x1 = $backx*14 + 13;
+    $x2 = $monetx*14 + 13;
+    $y = 86 - $fronty*14;
+    $y1 = 86 - $backy*14;
+    $y2 = 86 - $monety*14;
+    $z1 = $targetx*14 + 13;
+    $z2 = 86 - $targety*14;
+    $titlefronty = $y - 3;
+    $titlebacky = $y1 + 3;
+    $titlemonety = $y2 - 3;
+    $titletargety = $z2 - 3;
 
-    $arrowx1 = $x + 15;
-    $arrowy1 = $y - 30;
-    $arrowx2 = $z1 - 25;
-    $arrowy2 = $z2 + 50;
+
+    $arrowx1 = $x + 7;
+    $arrowy1 = $y - 5;
+    $arrowx2 = $z1 - 7;
+    $arrowy2 = $z2 + 9;
 
     $feedback = Block::load('simpleblockexample');
    	$block = \Drupal::entityTypeManager()->getViewBuilder('block')->view($feedback);
    	$xelll = t('hello');
 
    	$koord = [
+      'titletargety' => $titletargety,
+      'titlefronty' => $titlefronty,
+      'titlebacky' => $titlebacky,
+      'titlemonety' => $titlemonety,
    	  'frontx' => $x,
       'backx' => $x1,
       'monetx' => $x2,
@@ -124,8 +133,16 @@ class ResultController extends ControllerBase {
 
 	\Drupal::state()->setMultiple($koord);	
 
+      global $base_url;
+      $variables['base_url'] = $base_url;
+
     return array(
       '#theme' => 'page_result',
+      '#titletargety' => $titletargety,
+      '#titlefronty' => $titlefronty,
+      '#titlebacky' => $titlebacky,
+      '#titlemonety' => $titlemonety,
+      '#base_url' => $base_url,
       '#feedback' => $block,
       '#frontx' => $x,
       '#backx' => $x1,

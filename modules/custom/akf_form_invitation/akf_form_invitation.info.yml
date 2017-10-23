@@ -1,8 +1,0 @@
-name: AKF Form invitation
-type: module
-description: 'Provides invitation functionality.'
-core: '8.x'
-version: '8.x-1.x-dev'
-package: AKF
-dependencies:
- - paragraphs:paragraphs

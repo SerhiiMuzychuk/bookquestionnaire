@@ -24,6 +24,7 @@ footer {
 	height: 60px;   
 }
 
+
 .image-front {
   background-image: url('/themes/custom/kogan/images/Radical-Business-Model-Transformation_artwork3-2.jpg');
   background-size: cover;
@@ -36,8 +37,12 @@ footer {
   width: calc(81% + 10px);
 }
 
+.front .header-container {
+  padding-left: 10px !important;
+}
+
 .image-header {
-  height: 50px;
+  height: 40px;
 }
 
 
@@ -51,6 +56,7 @@ footer {
   margin-left: 19% !important;
   margin-right: 31% !important;
   width: 50% !important;
+  padding-left: 10px !important;
 }
 
 #block-footerblock ul li {
@@ -133,7 +139,7 @@ footer {
   float: right;
   margin: 0px;
   padding: 0 !important;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 
@@ -143,7 +149,7 @@ footer #block-footerblock ul {
   float: right;
   margin: 0px;
   padding: 0 !important;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .hello-text {
@@ -151,7 +157,7 @@ footer #block-footerblock ul {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	color: #666666;
 	padding-left: 0px;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .front-link:hover {
@@ -169,10 +175,11 @@ footer #block-footerblock ul {
 	width: 50%;
 	border-bottom: none;
   color: white;
+  margin-right: 5%;
 }
 
 #question-form .fieldset-wrapper {
-	width: 50%;
+	width: 45%;
   float: right;
   margin-top: 20px;
 }
@@ -188,7 +195,7 @@ footer #block-footerblock ul {
 .radical {
   margin: 0 !important;
   color: white;
-  padding-top: 60px;
+  padding-top: 50px;
   font-size: 44px;
 }
 
@@ -216,27 +223,27 @@ footer #block-footerblock ul {
   color: white;
   margin-bottom: 0;
   margin-top: 0 !important;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 .image-front {
   height: 250px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .main-text {
-  font-size: 17px !important;
+  font-size: 15px !important;
   line-height: 1.518em !important;
-  padding-top: 25px;
+  padding-top: 20px;
   color: white;
   font-family: Arial;
 }
 
 .front-link-text {
-  padding-top: 20px;
+  padding-top: 15px;
   font-family: Arial;
   font-style: italic;
-  font-size: 24px;
+  font-size: 21px;
   color: #ffbe18;
 }
 
@@ -310,21 +317,26 @@ table {
 } 
 
 footer #block-footerblock ul {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .add-feedback {
-  width: 50%;
+  width: 55% !important;
   display: inline-block;
   float: left;
+  margin-right: 5%;
 }
 
 .add-feedback.remove {
   display: none !important;
 } 
 
+.contact-data {
+  margin-top: -60px;
+}
+
 .send-res {
-  width: 50%;
+  width: 40%;
   display: inline-block;
   float: right;
 }
@@ -332,7 +344,7 @@ footer #block-footerblock ul {
 .again-button {
   float: right;
   display: inline-block !important;
-  width: 45%;
+  width: 70%;
   text-align: center;
   color: #fff;
   border: 1px solid #555;
@@ -360,6 +372,14 @@ footer #block-footerblock ul {
   border-radius: 3px;
   margin: 0;
   margin-top: 50px;
+}
+
+.radial-head {
+  font-size: 32px;
+}
+
+.business-head {
+  font-size: 32px;
 }
 
 #feedback-form .form-item {
@@ -414,10 +434,12 @@ footer #block-footerblock ul {
 
 .image-header {
   background-image: url('/themes/custom/kogan/images/Radical-Business-Model-Transformation_artwork3-2.jpg');
+  background-size: cover;
+  margin-top: 20px;
 }
 
 #block-footerblock {
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .front-link {
@@ -430,17 +452,22 @@ footer #block-footerblock ul {
   color: white;
   float: left;
   width: 100%;
+  font-size: 18px;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 10px !important;
 }
 
 .agree {
   float: right;
-  width: 19%;
+  width: 20%;
   color: #666666;
 }
 
 .disagree {
   float: right;
   width: 25%;
+  margin-right: 3%;
   color: #666666;
 }
 
@@ -477,6 +504,9 @@ footer #block-footerblock ul {
   font-style: italic;
   font-family: Arial;
   font-size: 21px;
+  padding-top: 0;
+  margin-top: 10px !important;
+  margin-left: 5px;
 }
 
 #block-headerblock {
@@ -499,31 +529,295 @@ footer #block-footerblock ul {
   font-size: 25px;
 }
 
+#toolbar-item-administration-tray > nav > div.toolbar-menu-administration > ul > li:nth-child(9) > a:before {
+  background-image: url('/themes/custom/kogan/images/presentation-report-chart-graph-annual-summary-128.png');
+}
+
+.select2-results__option:hover {
+  background-color: #ffbe18;
+  color: white !important;
+}
+
+.select2-results::-webkit-scrollbar-thumbe {
+  background-color: black;
+}
+
+.share-social span {
+  color: white;
+  padding-left: 10px;
+}
+
+#feedback-form > div.js-form-item.form-item.js-form-type-select.form-item-type.js-form-item-type > span {
+  width: 460px !important;
+  border: 1px solid #ffbe18;
+  border-radius: 4px;
+}
+
+.share-social span:hover {
+  color: #ffbe18;
+}
+
+#block-simpleblockexample .js-form-type-select label {
+  padding-top: 15px;
+}
+
+.again-button.open {
+  margin-top: 380px;
+}
+
+.share-social a {
+  border-bottom-style: unset;
+}
+
+.share-social a:hover {
+  border-bottom-style: unset;
+  color: #ffbe18;
+}
+
+.share-social {
+  display: grid;
+  width: 100%;
+  float: left;
+}
+
+.share-twitter {
+  padding-top: 20px;
+}
+
+.share-facebook {
+  padding-top: 10px;
+}
+
+.share-linkedin {
+  padding-top: 10px;
+}
+
+.again-button.sending {
+  margin-top: 0px;
+}
+
+#edit-type {
+  width: 161%;
+  height: 115%;
+}
+
+.talk {
+  color: white;
+  width: 50%;
+  font-weight: bold;
+}
+
+.talk-down {
+  color: white;
+  width: 50%;
+  font-size: 12px;
+}
+
+#contact-message-feedback-form label {
+  width: 100%;
+  display: inline-grid;
+  text-align: left;
+  padding-left: 28%;
+  color: white;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+#contact-message-feedback-form #edit-name input {
+  width: 45%;
+  border-radius: 0 !important;
+}
+
+#contact-message-feedback-form #edit-mail {
+  width: 100%;
+  display: inline-grid;
+  border-radius: 3px;
+  border: none;
+  padding: 0;
+}
+
+#contact-message-feedback-form #edit-mail input {
+  width: 45%;
+  display: inline-grid;
+  border-radius: 0 !important;
+  border: 1px solid white;
+  padding-left: 10px;
+}
+
+#edit-message-0-value {
+  width: 45%;
+  resize: none;
+  height: 170px;
+  border: 1px solid #ffbe18;
+  border-radius: 0 !important;
+}
+
+#contact-message-feedback-form {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  text-align: -webkit-center;
+}
+
+#contact-message-feedback-form #edit-submit {
+  color: #fff;
+  border: 1px solid #555;
+  cursor: pointer;
+  margin: 10px 1px;
+  background-color: #ffbe18 !important;
+  font-size: 14px;
+  padding: 5px 22px;
+  border-radius: 0;
+  width: 45%;
+  font-weight: bold;
+}
+
+#contact-message-feedback-form input {
+  border: 1px solid #ffbe18 !important;
+}
+
+.step-3-title {
+  font-size: 22px;
+  color: white;
+}
+
+
 @media screen and (max-width: 1599px) and (min-width: 1100px) {
+  .radial-head {
+    font-size: 26px;
+  }
+
+  .add-feedback {
+    width: 60% !important;
+    display: inline-block;
+    float: left;
+    margin-right: 0% !important;
+  }
+
+  .layout-container {
+    min-height: calc(100% - 50px);
+    position: relative;
+  }  
+
+  .add-feedback {
+    width: 60%;
+  }
+
+  .send-res {
+    width: 35%;
+    margin-left: 5%;
+  }
+
+  .again-button {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .link-feedback {
+    width: 100%;
+    margin-top: 25px !important;
+  }
+
+  .quest main {
+    padding-top: 195px;
+  }
+
+  main {
+    padding-top: 120px;
+  }
+
+  #question-form legend {
+    float: left;
+    display: inline-block;
+    width: 57%;
+    border-bottom: none;
+    color: white;
+    margin-right: 3%;
+  }
+
+  #question-form .fieldset-wrapper {
+    width: 40%;
+    float: right;
+    margin-top: 10px;
+  }
+
+  .title-access {
+    font-size: 14px;
+  }
+
+  .footer-wizard .pager li > a {
+    font-size: 16px !important;
+  }
+
+  header {
+    padding-top: 20px;
+  }
+
+  .image-header {
+    height: 25px;
+  }
+
+  .business-head {
+    font-size: 26px;
+  }
+
+
   .radical {
     padding-top: 20px;
-    font-size: 36px;
+    font-size: 32px;
+  }
+
+
+  .agree {
+    float: right;
+    width: 19%;
+    color: #666666;
+    font-size: 13px !important; 
+    margin-bottom: 0px !important;
+  }
+
+  .disagree {
+    float: right;
+    width: 25%;
+    margin-right: 3%;
+    color: #666666;
+    font-size: 13px !important;
+    margin-bottom: 0px !important;
+  }
+
+  #wizard-steps {
+    width: 12%;
+  }
+
+  .front .container {
+    margin-left: 19% !important;
+    margin-right: 33.5% !important;
+    width: 47.5% !important;
+  }
+
+  .front header {
+    padding-top: 0;
   }
 
   .busin {
-    font-size: 36px;
+    font-size: 32px;
   }  
 
   .trans {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .gain {
     padding-top: 10px;
-    font-size: 19px !important;
+    font-size: 17px !important;
   }
 
   .disr {
-    font-size: 19px !important;
+    font-size: 17px !important;
   }
 
   .image-front {
-    height: 200px;
+    height: 165px;
     margin-top: 15px;
   }
 
@@ -536,7 +830,7 @@ footer #block-footerblock ul {
   }
 
   .front-link-text {
-    padding-top: 15px;
+    padding-top: 10px;
     font-family: Arial-Boldita;
     font-style: oblique;
     font-size: 18px;
@@ -544,7 +838,8 @@ footer #block-footerblock ul {
   } 
 
   #block-footerblock {
-    padding-top: 40px;
+    padding-top: 30px;
+    padding-left: 5px;
   }
 
   footer #block-footerblock ul {
@@ -553,7 +848,7 @@ footer #block-footerblock ul {
     float: right;
     margin: 0px;
     padding: 0 !important;
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .hello {
@@ -572,7 +867,8 @@ footer #block-footerblock ul {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     color: gray;
     padding-left: 0px;
-    font-size: 11px;
+    font-size: 10px;
+    padding-top: 10px;
   }
 
 

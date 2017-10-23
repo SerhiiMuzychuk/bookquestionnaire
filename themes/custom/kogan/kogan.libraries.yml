@@ -3,12 +3,15 @@ global-lib:
     theme:
       stylesheets/kogan.style.css: {}
       stylesheets/kogan.question.css: {}
+      stylesheets/jquery-labelauty.css: {}
+      stylesheets/select2.min.css: {}
       
   js:
     js/kogan.script.js: {}
     js/wizard.js: {} 
     js/selected.js: {}
-
+    js/jquery-labelauty.js: {}
+    js/select2.min.js: {}
     
     
 bootstrap:
