@@ -7,9 +7,12 @@ dependencies:
     - field.field.node.questionnaire.field_company
     - field.field.node.questionnaire.field_company_size
     - field.field.node.questionnaire.field_email
+    - field.field.node.questionnaire.field_industry
     - field.field.node.questionnaire.field_name
+    - field.field.node.questionnaire.field_svg
     - node.type.questionnaire
   module:
+    - file
     - path
     - text
 id: node.questionnaire.default
@@ -56,6 +59,12 @@ content:
     third_party_settings: {  }
     type: email_default
     region: content
+  field_industry:
+    weight: 37
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_name:
     weight: 32
     settings:
@@ -63,6 +72,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_svg:
+    weight: 36
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
     region: content
   path:
     type: path

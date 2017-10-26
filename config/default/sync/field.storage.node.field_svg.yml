@@ -1,0 +1,23 @@
+uuid: 4b76317b-11d3-4ce5-b78e-a6b3b773a6b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_svg
+field_name: field_svg
+entity_type: node
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

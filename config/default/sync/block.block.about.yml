@@ -1,0 +1,31 @@
+uuid: 93c38777-7b6b-4f80-93d6-bf36833a367e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b3f59474-c31d-48d1-9e9a-a43d926d37de'
+  module:
+    - block_content
+    - system
+  theme:
+    - kogan
+id: about
+theme: kogan
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:b3f59474-c31d-48d1-9e9a-a43d926d37de'
+settings:
+  id: 'block_content:b3f59474-c31d-48d1-9e9a-a43d926d37de'
+  label: About
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /about
+    negate: false
+    context_mapping: {  }

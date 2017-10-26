@@ -155,3 +155,53 @@ input.labelauty + label > span.labelauty-checked-image
 	  height: 20px;
 	}
 }	  
+	  
+
+@media screen and (max-width: 340px) and (min-width: 300px) {
+	input.labelauty + label > span.labelauty-unchecked-image,
+	input.labelauty + label > span.labelauty-checked-image {
+	  width: 51px;
+	  height: 20px;
+	}
+}
+
+@media screen and (max-width: 390px) and (min-width: 340px) {
+	input.labelauty + label > span.labelauty-unchecked-image,
+	input.labelauty + label > span.labelauty-checked-image {
+	  width: 60px;
+	  height: 20px;
+	}
+}
+
+@media screen and (max-width: 440px) and (min-width: 390px) {
+	input.labelauty + label > span.labelauty-unchecked-image,
+	input.labelauty + label > span.labelauty-checked-image {
+	  width: 68px;
+	  height: 20px;
+	}
+}
+
+@media screen and (max-width: 479px) and (min-width: 440px) {
+	input.labelauty + label > span.labelauty-unchecked-image,
+	input.labelauty + label > span.labelauty-checked-image {
+	  width: 78px;
+	  height: 20px;
+	}
+}
+
+@media screen and (max-width: 300px) and (min-width: 265px) {
+	input.labelauty + label > span.labelauty-unchecked-image,
+	input.labelauty + label > span.labelauty-checked-image {
+	  width: 46px;
+	  height: 20px;
+	}
+}	  
+
+
+@media screen and (max-width: 265px) {
+	input.labelauty + label > span.labelauty-unchecked-image,
+	input.labelauty + label > span.labelauty-checked-image {
+	  width: 35px;
+	  height: 20px;
+	}
+}		

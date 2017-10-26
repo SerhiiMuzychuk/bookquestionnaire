@@ -269,7 +269,7 @@ input, textarea, select, .uneditable-input {
   color: #666;
   width: 16%;
   font-size: 16px !important;
-  margin-top: 20px;
+  margin-top: 10px;
   float: right;
 }
 
@@ -452,7 +452,8 @@ input[type="text"], input[type="password"] {
 
 .tab-content h2 {
   color: white;
-  padding: 20px 0;
+  padding-top: 0px !important;
+  margin-top: 0px !important;
   margin-bottom: 0;
   padding-bottom: 10px;
   float: left !important;
@@ -598,7 +599,7 @@ input[type="text"], input[type="password"] {
 
 .navbar .navbar-inner {
   z-index: 1;
-  width: 100%;
+  max-width: 0.00001%;
   text-align: -webkit-center ;
 }
  
@@ -610,13 +611,12 @@ input[type="text"], input[type="password"] {
   border: 1px solid transparent;
   background-color: #fff;
   padding-top: 60px;
-  min-width: 100%;
+  max-width: 0.00001%;
   width: 75%;
   left: 12.5%;
   right: 12.5%;
   text-align: center;
   z-index: -100 !important;
-  position: inherit;
   top: 0;
   margin-top: -410px !important;
 }
@@ -1231,6 +1231,7 @@ body > div > main > div > div > div:nth-child(1) > div > ul > li:nth-child(2) {
 
 .front #block-footerblock {
   background: none !important;
+  padding-left: 5px;
 }
 
 
@@ -1463,14 +1464,12 @@ tr.draggable:nth-child(4) > td:nth-child(2) {
 }
 
 
+
+
 @media screen and (max-width: 1599px) and (min-width: 1100px) {
   .fieldset-legend {
     font-size: 13px;
     line-height: 1.618em;
-  }
-
-  .tab-content {
-    padding-top: 230px;
   }
 
 
@@ -1522,10 +1521,24 @@ tr.draggable:nth-child(4) > td:nth-child(2) {
 @media screen and (max-width: 479px) { 
   .footer-wizard {
     position: unset;
+    margin-left: 0% !important;
+  }
+
+  .title-access {
+    font-size: 15px;
+  }
+
+  .footer-wizard .pager li > a {
+    font-size: 16px !important;
   }
 
   #rootwizard .progress {
     display: none;
+  }
+
+  .pager {
+    margin: 10px !important;
+    margin-left: 0px !important;
   }
 
   #rootwizard .navbar {
@@ -1538,9 +1551,15 @@ tr.draggable:nth-child(4) > td:nth-child(2) {
   .tab-content #wizard-steps {
     position: unset;
     text-align: center;
-    margin-left: 42%;
     margin-top: 0;
+    width: 49%;
+    font-size: 15px !important;
+    padding-top: 10px;
   } 
+
+  .fieldset-legend {
+    font-size: 13px;
+  }
 
   .table-rank {
     width: 60%;
@@ -1637,9 +1656,7 @@ tr.draggable:nth-child(4) > td:nth-child(2) {
   }
 
   .tab-content fieldset {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 100%;
   }
 
   .tab-content fieldset legend {
@@ -1650,8 +1667,33 @@ tr.draggable:nth-child(4) > td:nth-child(2) {
     font-size: 22px;
     width: 90%;
     margin-left: 5%;
+    font-size: 15px !important;
   }
 
+  #tab5 .pager.wizard {
+    width: 50% !important;
+  }
+
+}
+
+@media screen and (max-width: 300px) {
+  .footer-wizard .pager li > a {
+    font-size: 14px !important;
+  }
+
+  .pager #edit-submit {
+    width: unset !important;
+    font-size: 12px !important;
+    margin-left: 0% !important;
+    margin-top: 15px !important;
+  }
+
+  .tab-content #wizard-steps {
+    font-size: 14px !important;
+  }
+  #tab5 .pager.wizard {
+    width: 50% !important;
+  }
 }
 
 #rootwizard .navbar-inner ul li a:before {
@@ -1710,6 +1752,7 @@ tr.draggable:nth-child(4) > td:nth-child(2) {
   border: 4px solid #dedede;
   border-radius: 1.7em;
   margin-left: 100%;
+  display: none;
 }
 
 #rootwizard .nav-pills > li:nth-child(2) > a {
@@ -1721,22 +1764,13 @@ tr.draggable:nth-child(4) > td:nth-child(2) {
 }
 
 #rootwizard .nav-pills > li:nth-child(4) > a {
-  margin-left: 1000% !important;
+ max-width: 0.001%;
 }
 
 #rootwizard .nav-pills > li:nth-child(5) > a {
-  margin-left: 1300% !important;
+  max-width: 0.0001%;
 }
 
-#rootwizard .navbar-inner ul li a:after {
-  content: ' ';
-  position: absolute;
-  border: 4px solid #dedede;
-  border-radius: 4px;
-  left: calc( 50% + 1.4em/2 );
-  right: -200%;
-  top: calc( 1.4em / 2 );
-}
 
 
 .nav>li>a {

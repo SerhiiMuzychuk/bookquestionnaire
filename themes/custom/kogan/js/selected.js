@@ -1,8 +1,4 @@
 
- 
-
-
-
 
 (function ($) {
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
@@ -13,8 +9,9 @@ Drupal.behaviors.ss2 = {
       });
 
       $(document).ready(function() {
-          $('#block-simpleblockexample .js-form-type-select #edit-type').select2();
+          $('#edit-industry').select2();
       });
+
 
       $('#edit-question1-1').labelauty({ label: false });
       $('#edit-question1-2').labelauty({ label: false });
@@ -160,8 +157,7 @@ Drupal.behaviors.ss2 = {
       $('#edit-question114-1').labelauty({ label: false });
       $('#edit-question114-2').labelauty({ label: false });
       $('#edit-question114-3').labelauty({ label: false });
-      $('#edit-question114-4').labelauty({ label: false });
-      
+      $('#edit-question114-4').labelauty({ label: false });     
       
 }}
 

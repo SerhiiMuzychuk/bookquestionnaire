@@ -19,11 +19,13 @@ use Drupal\block\Entity\Block;
  *  admin_label = @Translation("Footer block")
  * )
  */
+
 class FooterBlock extends BlockBase {
   
   /**
    * {@inheritdoc}
    */
+
   public function build() {
     $menu = Block::load('footer');
     $prod_menu = \Drupal::entityTypeManager()->getViewBuilder('block')->view($menu);
@@ -33,8 +35,7 @@ class FooterBlock extends BlockBase {
       '#theme' => 'footer_block',
       '#items' => array(
         'footer' => $prod_menu,
-        
-        )
+        ),
 
     );
   }

@@ -1,0 +1,26 @@
+uuid: 97c5e077-bf2c-4117-ac3a-f58f2c5756cf
+langcode: en
+status: false
+dependencies:
+  module:
+    - feedback_form
+    - system
+  theme:
+    - kogan
+id: getthefullreportandadiscountcodeforthebook
+theme: kogan
+region: content
+weight: 0
+provider: null
+plugin: feedback_block
+settings:
+  id: feedback_block
+  label: 'Get the full report and a discount code for the book'
+  provider: feedback_form
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /result
+    negate: false
+    context_mapping: {  }

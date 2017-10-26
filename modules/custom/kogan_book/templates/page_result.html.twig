@@ -49,6 +49,14 @@ text {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .graph {
+    height: 210px;
+    width: 210px;
+    margin-top: 20px;
+  }
+}
+
 </style>
 <div class="container">
 
@@ -151,9 +159,7 @@ score</text>
 
 <g class="data" data-setname="Our first data set">
 	
-  <!-- <circle cx="{{ items }}" cy="312.5" data-value="7.2" r="4"></circle>
-  <circle cx="{{ items1 }}" cy="375" data-value="8.1" r="4"></circle>
-  <circle cx="{{ items2 }}" cy="312.5" data-value="7.7" r="4"></circle> -->
+
  <polygon points="{{ frontx }},{{ fronty }} {{ backx }},{{ backy }} {{ monetx }},{{ monety }}" style="fill:#ffbe18;stroke:white;stroke-width:0.3" />
   <defs>
     <marker id="arrow" markerWidth="5" markerHeight="5" refX="2" refY="2" orient="auto" markerUnits="strokeWidth">
@@ -174,168 +180,6 @@ score</text>
 </div>
 
 
-{#
-<div class="container">
-  <table style="width:100%">
-    <tr>
-      <th>Questions</th> 
-      <th>Strongly</th>
-    </tr>
-    <tr>
-      <td> Where do you now stand, to begin with? </td>
-      <td></td> 
-    </tr>
-    <tr>
-      <td>Front end</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>1. Our offering bundles multiple components</td>
-      <td>{{ question1 }}</td>
-    </tr>
-    <tr>
-      <td>2. Our customers are bound into a series of frequent transactions with us. </td>
-      <td>{{ question2 }}</td>
-    </tr>
-    <tr>
-      <td>3. We measure customer retention systematically.</td>
-      <td>{{ question3 }}</td>
-    </tr>
-    <tr>
-      <td>4. Customers have broad and flexible choices regarding our offering.</td>
-      <td>{{ question4 }}</td>
-    </tr>
-    <tr>
-      <td>5. Our unique selling proposition is our ability to adapt our products or services.</td>
-      <td>{{ question5 }}</td>
-    </tr>
-    <tr>
-      <td>6. During sales, we engage in close dialogue with customers.</td>
-      <td>{{ question6 }}</td>
-    </tr>
-    <tr>
-      <td>Back-end</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>7. Our core competence is our shared architecture, which integrates the end-to-end offering.</td>
-      <td>{{ question7 }}</td>
-    </tr>
-    <tr>
-      <td>8. Our success heavily relies on a network of contributing and complementing partners. </td>
-      <td>{{ question8 }}</td>
-    </tr>
-    <tr>
-      <td>9. Our operations are geared towards flexibility, not scalability.</td>
-      <td>{{ question9 }}</td>
-    </tr>
-    <tr>
-      <td>10. Our research and development is driven by specific requirements of single customers</td>
-      <td>{{ question10 }}</td>
-    </tr>
-    <tr>
-      <td>Monetization mechanics</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>11. We get long-term revenue streams from our customers</td>
-      <td>{{ question11 }}</td>
-    </tr>
-    <tr>
-      <td>12. Our transaction costs are only covered over time.</td>
-      <td>{{ question12 }}</td>
-    </tr>
-    <tr>
-      <td>13. Our prices are based on a mixed calculation that integrates all offering components.</td>
-      <td>{{ question13 }}</td>
-    </tr>
-    <tr>
-      <td>14. Our prices are driven by customers’ willingness to pay more than by our competitors’ pricing</td>
-      <td>{{ question14 }}</td>
-    </tr>
-    <tr>
-      <td>15. We have more variable costs than fixed costs.</td>
-      <td>{{ question15 }}</td>
-    </tr>
-
-
-    <tr>
-      <td>Where do you want to go?</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Impact of digitization:</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>1. Costs of transferring and sharing our products and services become exponentially cheaper via digitization </td>
-      <td>{{ question101 }}</td>
-    </tr>
-    <tr>
-      <td>2. New technological solutions enable the company to lock customer in more easily than before. </td>
-      <td>{{ question102 }}</td>
-    </tr>
-    <tr>
-      <td>3.  Customers are more willing to engage in long-term collaborations with the vendors..</td>
-      <td>{{ question103 }}</td>
-    </tr>
-    <tr>
-      <td>4. There are new possibilities beyond the products to differentiate an offering in the market.</td>
-      <td>{{ question104 }}</td>
-    </tr>
-    <tr>
-      <td>5. Technological progress provides deeper customer insights for better-customized offers. </td>
-      <td>{{ question105 }}</td>
-    </tr>
-    <tr>
-      <td>6. Power shifts to customers because they actively discuss and comment on our offerings in online communities.</td>
-      <td>{{ question106 }}</td>
-    </tr>
-  
-    <tr>
-      <td>7.  There are few technical opportunities to standardize our offerings..</td>
-      <td>{{ question107 }}</td>
-    </tr>
-
-    <tr>
-      <td>Impacts of servitization and productization:</td>
-      <td></td>
-    </tr>
-
-    <tr>
-      <td>8. There are opportunities to complement our products through value-adding services.  </td>
-      <td>{{ question108 }}</td>
-    </tr>
-    <tr>
-      <td>9. O Customers are looking for enduring service contracts and relationships.</td>
-      <td>{{ question109 }}</td>
-    </tr>
-    <tr>
-      <td>10. Customers ask for co-creation of the offering and on-site implementation of services.</td>
-      <td>{{ question110 }}</td>
-    </tr>
-    
-    <tr>
-      <td>11. Our customers’ main interest is to have a reliable output at a certain service level, not to own a product.</td>
-      <td>{{ question111 }}</td>
-    </tr>
-    <tr>
-      <td>12. In our market segment, scale effects are less relevant, because customers prefer tailored, total solutions.</td>
-      <td>{{ question112 }}</td>
-    </tr>
-    <tr>
-      <td>13. As a vendor, we are becoming more dependent on our customers.</td>
-      <td>{{ question113 }}</td>
-    </tr>
-    <tr>
-      <td>14. The scalability of our services via reusable templates does not really work in our business segment.</td>
-      <td>{{ question114 }}</td>
-    </tr>
-
-  </table>
-</div>
-#}
-
 <div class="container">
   <div class="cont-result">  <div class="add-feedback">
       <a class="link-feedback"> Get the full report and a discount code for the book</a>
@@ -347,6 +191,10 @@ score</text>
 
     <div class="feedback">
       {{ feedback }} 
+    </div>
+
+    <div class="send-res">
+      <a class="again-but" href="/questionnaire">Redo</a>
     </div>
 
     <p class="info-submit-feedback"> Get the full customized report and a discount code</p>
@@ -361,7 +209,7 @@ score</text>
       <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ base_url }}"><img class="facebook-share" src="/themes/custom/kogan/images/facebook-6-xxl.png" style="height: 30px"><span>Share on Facebook</span></a>
     </div>
     <div class="share-linkedin">
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ base_url }}&title=sdsadsa&summary=&source="><img class="facebook-share" src="/themes/custom/kogan/images/linkedin-3-xxl.png" style="height: 30px"><span>Share on Linkedin</span></a>
+    	<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ base_url }}&title=sdsadsa&summary=&source="><img class="facebook-share" src="/themes/custom/kogan/images/linkedin-3-xxl.png" style="height: 30px"><span>Share on Linkedin</span></a>
     </div>  
   </div>
 </div>

@@ -16,18 +16,7 @@ use Drupal\file\Entity\File;
 
 
 
-
 function kogan_book_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-    // $file = File::create([
-    //   'uid' => 1,
-    //   'filename' => 'test.svg',
-    //   'uri' => 'public://page/test.svg',
-    //   'status' => 1,
-    // ]);
-    // $file->save();
-    // $text = '<svg>';
-    // file_put_contents("test.svg", $text);
-
   if ($form_id == 'contact_message_feedback_form') {
     $form['name']['#title'] = 'NAME*';
     $form['mail']['#title'] = 'EMAIL*';
@@ -37,10 +26,10 @@ function kogan_book_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
     $form['subject']['#access'] = FALSE;
   }
 
-	if ($form_id == 'user_register_form') {
+  if ($form_id == 'user_register_form') {
     $form['field_monthly']['widget'][0]['value']['#title']= t('Dailling code');    
-	  $form['actions']['submit']['#submit'][] = 'oil_survey_contact_submit';
-	  $form['actions']['submit']['#value'] = t('Next step');
+	$form['actions']['submit']['#submit'][] = 'oil_survey_contact_submit';
+	$form['actions']['submit']['#value'] = t('Next step');
     $form['account']['mail']['#description'] = t('');
     $form['account']['pass']['#description'] = t('');
     $form['account']['mail']['#attributes']['placeholder'] = t('please fill...');
@@ -69,16 +58,8 @@ function kogan_book_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
 }
 
 
-// function kogan_book_contact_submit($form, \Drupal\Core\Form\FormStateInterface &$form_state) {
-//   $host = \Drupal::request()->getHost();
-//   $url = Url::fromUri('http://' . $host . '/questionary');
-//   $form_state->setRedirectUrl($url);
-// }
-
 
 function kogan_book_theme($existing, $type, $theme, $path) {
-
-
   return array(    
     'page_result' => array(
       'variables' => array(
@@ -131,14 +112,7 @@ function kogan_book_theme($existing, $type, $theme, $path) {
         'question114' => null,
         ),
       'template' => 'page_result',
-    ),     
-
-    // 'top_header_block' => array(
-    //   'variables' => array(
-    //     'items' => null,
-    //     ),
-    //   'template' => 'top_header_block',
-    // ),         
+    ),          
     
     'content_block' => array(
       'template' => 'content_block',

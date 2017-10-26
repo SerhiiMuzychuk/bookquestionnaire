@@ -1,0 +1,21 @@
+uuid: 3261c752-468c-41a4-918a-8af74cf0ff77
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_industry
+field_name: field_industry
+entity_type: node
+type: list_string
+settings:
+  allowed_values: {  }
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

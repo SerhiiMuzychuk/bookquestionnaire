@@ -13,7 +13,6 @@ global-lib:
     js/jquery-labelauty.js: {}
     js/select2.min.js: {}
     
-    
 bootstrap:
   css:
     theme:

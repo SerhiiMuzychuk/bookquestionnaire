@@ -1,0 +1,21 @@
+uuid: f3460237-12f0-4526-90b3-598e9e0bd849
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_industry
+    - node.type.questionnaire
+  module:
+    - options
+id: node.questionnaire.field_industry
+field_name: field_industry
+entity_type: node
+bundle: questionnaire
+label: Industry
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

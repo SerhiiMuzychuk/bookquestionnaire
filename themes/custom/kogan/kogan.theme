@@ -12,29 +12,27 @@ function kogan_theme($existing, $type, $theme, $path) {
     ]    
   ];
 }
-
-function kogan_preprocess_page(&$variables) {
-  $svg = file_get_contents(drupal_get_path('theme', 'kogan') . '/images/my.svg');
-  $variables['some_svg'] = $svg;
-
-  global $base_url;
-  // $variables['base_url'] = $base_url;
-  // $share = $variables['node']->get('nid')->value;
   
-  // $variables['share_facebook'] = $share;   
-  // kint($share);
-}
 
 function kogan_preprocess_node__questionnaire(&$variables) {
 
 	$variables['title'] = $variables['node']->get('title')->value;
 	$variables['name'] = $variables['node']->get('field_name')->value;
+	$variables['industry'] = $variables['node']->get('field_industry')->value;
 	$variables['company'] = $variables['node']->get('field_company')->value;
 	$variables['company_size'] = $variables['node']->get('field_company_size')->value;
 	$variables['created'] = $variables['node']->get('created')->value;
 
 
   $keys = [
+    'titletargety',
+    'titlefronty',
+    'titlebacky',
+    'titlemonety',
+    'arrowx1',
+    'arrowy1',
+    'arrowx2',
+    'arrowy2',
     'frontx',
     'backx',
     'monetx',
@@ -43,10 +41,7 @@ function kogan_preprocess_node__questionnaire(&$variables) {
     'monety',
     'targetx',
     'targety',
-    'arrowx1',
-	'arrowy1',
-	'arrowx2',
-	'arrowy2',
+    'feedback',
     'question1',
     'question2',
     'question3',
@@ -91,6 +86,10 @@ function kogan_preprocess_node__questionnaire(&$variables) {
 	$variables['arrowy1'] = $val['arrowy1'];
 	$variables['arrowx2'] = $val['arrowx2'];
 	$variables['arrowy2'] = $val['arrowy2'];
+	$variables['titletargety'] = $val['titletargety'];
+	$variables['titlefronty'] = $val['titlefronty'];
+	$variables['titlebacky'] = $val['titlebacky'];
+	$variables['titlemonety'] = $val['titlemonety'];
 	$variables['question1'] = $val['question1'];
 	$variables['question2'] = $val['question2'];
 	$variables['question3'] = $val['question3'];
@@ -120,6 +119,5 @@ function kogan_preprocess_node__questionnaire(&$variables) {
 	$variables['question112'] = $val['question112'];
 	$variables['question113'] = $val['question113'];
 	$variables['question114'] = $val['question114'];
-
 
 }

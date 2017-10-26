@@ -694,7 +694,6 @@
             }
 
 
-
             return formValid;
 
           });  
@@ -704,54 +703,17 @@
           $('.feedback').addClass('open');
           $('.again-button').addClass('open');
           $('.add-feedback').addClass('remove');
+          $('.again-but').addClass('open');
         });
 
         $('#feedback-form #edit-submit').click(function() {
           $('.info-submit-feedback').addClass('active');
           $('.feedback').addClass('remove');
-          $('.again-button').removeClass('open');
           $('.again-button').addClass('sending');
         });
 
 
-        // $('.js-form-item-question1-3 .iCheck-helper').click(function() {
-        //   $('#edit-question1-text').toggleClass('qwasasas');
-        // });
-        //  $('#question-form .icheckbox_square input').click(function() {
-        //   $('#question-form #edit-question1-text').addClass('helllo1');
-        //  });
-         
-    
-   
-
-      // $("#block-about-2").addClass('container');
-      // $("#block-examplesblock").addClass('container');
-      // $("#contact-message-feedback-form").addClass('container');
-      // $("#edit-pass-pass1").attr("placeholder", "please fill...");
-      // $("#edit-pass-pass2").attr("placeholder", "please fill...");
-
       
-      // $('#tab1 #back').click(function() {
-      //   document.location.href = '/first-step';
-      // });
-
-      // $('#edit-question9-0').click(function(){
-      //   $('#edit-question10--wrapper').addClass('active');
-      // });
-      //  $('#edit-question9-1').click(function(){
-      //   $('#edit-question10--wrapper').removeClass('active');
-      //   $('#edit-question10-0').removeClass('has-error');
-      //   formValid = false;
-      // });
-
-      //  $('#edit-question12-0').click(function(){
-      //   $('#edit-question13--wrapper').addClass('open');
-      // });
-      //  $('#edit-question12-1').click(function(){
-      //   $('#edit-question13--wrapper').removeClass('open');
-      //   $('#edit-question13-0').removeClass('has-error');
-      //   formValid = false;
-      // });
 
        $('#rootwizard > div.navbar > div > div > ul > li:nth-child(1) > a').click(function(){
         return false;
@@ -772,17 +734,7 @@
        $('#rootwizard > div.navbar > div > div > ul > li:nth-child(5) > a').click(function(){
         return false;
        });
-      // $('#tab1')document.getElementById("#edit-submit").style.display = "none";
-      
-    // }
-    //    $('.hero').click(function() {
-    //     document.location.href = '/node';
-    //   });
-
-        // $('.hero').click(function() {
-        // document.location.href = '/node';
-        // });
-      // return false;
+     
       
     }
   };
