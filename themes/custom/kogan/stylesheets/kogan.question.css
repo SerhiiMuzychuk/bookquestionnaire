@@ -253,7 +253,6 @@ input, textarea, select, .uneditable-input {
 }
 
 
-
 .terms-condition {
   margin-bottom: 25px;
 }
@@ -269,7 +268,7 @@ input, textarea, select, .uneditable-input {
   color: #666;
   width: 16%;
   font-size: 16px !important;
-  margin-top: 10px;
+  margin-top: 15px;
   float: right;
 }
 
@@ -303,17 +302,6 @@ a:hover, a:focus {
 a {
   color: #2CA8FF;
 }
-
-/*.pill-wrapper .nav-pills {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}*/
-
-/*.pill-wrapper ul {
-  list-style: none;
-}*/
 
 p {
   font-size: 16px;
@@ -1513,15 +1501,26 @@ tr.draggable:nth-child(4) > td:nth-child(2) {
    #wizard-steps {
     width: 14%;
     font-size: 13px !important;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
 }
 
 @media screen and (max-width: 479px) { 
+  #tab5 .footer-wizard .pager li > a {
+    float: left;
+    width: 29% !important;
+  }
+
   .footer-wizard {
     position: unset;
     margin-left: 0% !important;
+  }
+
+  .pager #edit-submit {
+    margin-left: 0 !important;
+    margin-top: 10px !important;
+    font-size: 16px !important;
   }
 
   .title-access {
@@ -1671,7 +1670,7 @@ tr.draggable:nth-child(4) > td:nth-child(2) {
   }
 
   #tab5 .pager.wizard {
-    width: 50% !important;
+    width: 40% !important;
   }
 
 }

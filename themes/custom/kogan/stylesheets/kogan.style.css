@@ -767,6 +767,7 @@ footer #block-footerblock ul {
   height: 170px;
   border: 1px solid #ffbe18;
   border-radius: 0 !important;
+  padding-left: 10px !important;
 }
 
 #contact-message-feedback-form {
@@ -1024,6 +1025,44 @@ footer #block-footerblock ul {
 
 @media screen and (max-width: 479px) {
 
+  .about-text-title {
+    font-size: 22px !important;
+  }
+
+  .pager #edit-submit {
+    margin-left: 0 !important;
+    margin-top: 10px !important;
+    font-size: 16px !important;
+  }
+
+  .feedback {
+    width: 100%;
+  }
+
+  #tab1 .pager.wizard {
+    width: 12% !important;
+  }
+
+  #feedback-form {
+    width: 100%;
+  }
+ 
+  #feedback-form #edit-industry {
+    width: 100%;
+  }
+
+  #feedback-form .form-item-industry {
+    width: 100% !important;
+  }
+
+  #feedback-form input {
+    width: 100%;
+  }
+
+  #feedback-form #edit-submit {
+    width: 100% !important;
+  }
+
   #user-login-form {
     width: 95%;
     margin-left: 0 !important;
@@ -1128,15 +1167,16 @@ footer #block-footerblock ul {
   }
 
   .container {
-    width: 99% !important;
+    width: 96% !important;
     margin-left: 2% !important;
-    margin-right: 3% !important;
+    margin-right: 2% !important;
     padding: 0!important;
+    padding-left: 2px !important;
   }
 
   .front .container {
-    width: 93% !important;
-    margin-left: 5% !important;
+    width: 96% !important;
+    margin-left: 2% !important;
     margin-right: 2% !important;
     padding: 0!important;
   }
@@ -1193,21 +1233,23 @@ footer #block-footerblock ul {
   }
 
   .front #block-footerblock {
-    padding-left: 10px !important;
+    padding-left: 3px !important;
   }
 
   .front .header-container {
-    width: 93%;
+    width: 96%;
     padding-left: 0px !important;
-    margin-left: 5%;
+    margin-left: 2%;
     margin-right: 2%;
+    padding-right: 0px !important;
   }
 
   .header-container {
-    width: 93%;
-    padding-left: 0px !important;
-    margin-left: 5%;
+    width: 96%;
+    padding-left: 10px !important;
+    margin-left: 2%;
     margin-right: 2%;
+    padding-right: 10px !important;
   }
 
   .main-text {
@@ -1232,6 +1274,7 @@ footer #block-footerblock ul {
 
   .disagree {
     float: left;
+    width: 30% !important;
   }
 
   #question-form .fieldset-wrapper {
@@ -1440,6 +1483,8 @@ footer #block-footerblock ul {
   .business-head {
     font-size: 19px;
   }
+
+  
 
   .gain {
     font-size: 11px !important;
