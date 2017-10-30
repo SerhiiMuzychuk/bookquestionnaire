@@ -12,7 +12,7 @@ Drupal.behaviors.ss2 = {
           $('#edit-industry').select2();
       });
 
-
+      $('#edit-agree-0').labelauty({ label: false });
       $('#edit-question1-1').labelauty({ label: false });
       $('#edit-question1-2').labelauty({ label: false });
       $('#edit-question1-3').labelauty({ label: false });

@@ -15,13 +15,13 @@ function kogan_theme($existing, $type, $theme, $path) {
   
 
 function kogan_preprocess_node__questionnaire(&$variables) {
-
 	$variables['title'] = $variables['node']->get('title')->value;
 	$variables['name'] = $variables['node']->get('field_name')->value;
 	$variables['industry'] = $variables['node']->get('field_industry')->value;
 	$variables['company'] = $variables['node']->get('field_company')->value;
 	$variables['company_size'] = $variables['node']->get('field_company_size')->value;
 	$variables['created'] = $variables['node']->get('created')->value;
+	// $agree = $variables['node']->get('field_argee')->value;
 
 
   $keys = [
