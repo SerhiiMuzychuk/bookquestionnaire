@@ -234,8 +234,23 @@ footer #block-footerblock ul {
   margin-right: 5%;
 }
 
+.step3-text-link:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.step4-text-link:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+#feedback-form .form-item-agree input.labelauty + label > span.labelauty-checked-image {
+  width: 32px !important;
+}
+
 .step1-main-text {
   color: white;
+  font-size: 15px;
 }
 
 #question-form .fieldset-wrapper {
@@ -416,6 +431,14 @@ svg {
 
 footer #block-footerblock ul {
   font-size: 13px;
+}
+
+.step3-text-link {
+  border-bottom: 1px solid #ffbe18;
+}
+
+.step4-text-link {
+  border-bottom: 1px solid #ffbe18;
 }
 
 .add-feedback {
