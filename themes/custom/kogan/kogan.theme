@@ -21,8 +21,7 @@ function kogan_preprocess_node__questionnaire(&$variables) {
 	$variables['company'] = $variables['node']->get('field_company')->value;
 	$variables['company_size'] = $variables['node']->get('field_company_size')->value;
 	$variables['created'] = $variables['node']->get('created')->value;
-	// $agree = $variables['node']->get('field_argee')->value;
-
+	$variables['agree'] = $variables['node']->get('field_iagree')->value;
 
   $keys = [
     'titletargety',

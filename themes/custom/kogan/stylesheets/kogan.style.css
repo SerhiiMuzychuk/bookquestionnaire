@@ -234,6 +234,10 @@ footer #block-footerblock ul {
   margin-right: 5%;
 }
 
+.step1-main-text {
+  color: white;
+}
+
 #question-form .fieldset-wrapper {
   width: 45%;
   float: right;
@@ -242,6 +246,12 @@ footer #block-footerblock ul {
 
 #question-form .fieldset-wrapper > div {
   display: -webkit-inline-box;
+}
+
+.step4-title {
+  font-size: 22px;
+  color: white;
+  text-transform: uppercase;
 }
 
 #question-form input[type=radio] {
@@ -499,6 +509,23 @@ footer #block-footerblock ul {
   display: inline-grid;
 }
 
+
+#feedback-form .form-item-agree {
+  display: flex;
+  padding-top: 20px;
+}
+
+#feedback-form .form-item-agree #edit-agree {
+  width: 10%;
+  float: left;
+}
+
+#feedback-form .form-item-agree  label.option {
+  width: 89%;
+  float: left;
+}
+
+
 #feedback-form .form-item-company {
   padding-top: 15px;
 }
@@ -509,12 +536,13 @@ footer #block-footerblock ul {
 
 #feedback-form .form-item-title {
   padding-top: 15px;
+  float: left;
 }
 
 #feedback-form #edit-submit {
   float: left;
   display: inline-block !important;
-  width: 45%;
+  width: 46%;
   text-align: center;
   color: #fff;
   border: 1px solid #555;

@@ -9,9 +9,17 @@
       <label>Company:</label>
       {{ company }}
     </div>
-    <div class="contact-company">
+    <div class="contact-industry">
       <label>Industry:</label>
       {{ industry }}
+    </div>
+    <div class="contact-agree">
+      <label>I agree to receive occasional informational e-mails regarding the topic of the book</label>
+      {% if agree == '1' %}
+        <p>Yes</p>
+      {% else %}
+        <p>No</p>
+      {% endif %}
     </div>
     <div class="contact-company-size">
       <label>Company size:</label>

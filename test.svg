@@ -782,12 +782,12 @@
 
     <g fill="#ffbe18" fill-opacity="1" stroke="none" transform="matrix(5,0,0,5,8,8)"
     >
-    <path vector-effect="none" fill-rule="nonzero" d="M33,70.25 L23,77.25 L27,68.5 L33,70.25"/>
+    <path vector-effect="none" fill-rule="nonzero" d="M41,70.25 L27,77.25 L29,65 L41,70.25"/>
     </g>
 
     <g fill="none" stroke="#fff" stroke-opacity="1" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" transform="matrix(5,0,0,5,8,8)"
     >
-    <path vector-effect="none" fill-rule="nonzero" d="M33,70.25 L23,77.25 L27,68.5 L33,70.25"/>
+    <path vector-effect="none" fill-rule="nonzero" d="M41,70.25 L27,77.25 L29,65 L41,70.25"/>
     </g>
 
     <g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(5,0,0,5,8,8)"
@@ -846,7 +846,7 @@
 
     <g fill="#555555" fill-opacity="1" stroke="#555555" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,8,8)"
     >
-    <text fill="#fff" fill-opacity="1" stroke="none" xml:space="preserve" x="165" y="351.0975" font-family="Times New Roman" font-size="15" font-weight="400" font-style="normal" 
+    <text fill="#fff" fill-opacity="1" stroke="none" xml:space="preserve" x="205" y="351.0975" font-family="Times New Roman" font-size="15" font-weight="400" font-style="normal" 
      >Front end</text>
     </g>
 
@@ -872,7 +872,7 @@
 
     <g fill="#555555" fill-opacity="1" stroke="#555555" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,8,8)"
     >
-    <text fill="#fff" fill-opacity="1" stroke="none" xml:space="preserve" x="115" y="406.8675" font-family="Times New Roman" font-size="15" font-weight="400" font-style="normal" 
+    <text fill="#fff" fill-opacity="1" stroke="none" xml:space="preserve" x="135" y="406.8675" font-family="Times New Roman" font-size="15" font-weight="400" font-style="normal" 
      >Back-end</text>
     </g>
 
@@ -898,7 +898,7 @@
 
     <g fill="#555555" fill-opacity="1" stroke="#555555" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,8,8)"
     >
-    <text fill="#fff" fill-opacity="1" stroke="none" xml:space="preserve" x="135" y="332.085" font-family="Times New Roman" font-size="15" font-weight="400" font-style="normal" 
+    <text fill="#fff" fill-opacity="1" stroke="none" xml:space="preserve" x="145" y="314.34" font-family="Times New Roman" font-size="15" font-weight="400" font-style="normal" 
      >Monetization</text>
     </g>
 
@@ -924,7 +924,7 @@
 
     <g fill="#555555" fill-opacity="1" stroke="#555555" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,8,8)"
     >
-    <text fill="#fff" fill-opacity="1" stroke="none" xml:space="preserve" x="310" y="196.04" font-family="Times New Roman" font-size="15" font-weight="400" font-style="normal" 
+    <text fill="#fff" fill-opacity="1" stroke="none" xml:space="preserve" x="362.5" y="207.87" font-family="Times New Roman" font-size="15" font-weight="400" font-style="normal" 
      >Target position</text>
     </g>
 
@@ -934,7 +934,7 @@
         </marker>
       </defs>
 
-    <line x1="200" y1="330.8175" x2="275" y2="256.88" stroke="#fff" stroke-width="4" marker-end="url(#arrow)" />
+    <line x1="240" y1="330.8175" x2="327.5" y2="268.71" stroke="#fff" stroke-width="4" marker-end="url(#arrow)" />
 
     <g fill="#555555" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(5,0,0,5,8,8)"
     >
@@ -1020,18 +1020,18 @@
       <g fill="#ffbe18" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,8,8)"
     >
     <path  d="
-    M 310 213.25
-    L 312.5 215.58
-    L 311.732 212.25
-    L 315 211.25
-    L 311.732 210.25
-    L 312.5 206.92
-    L 310 209.25
-    L 307.5 206.92
-    L 308.268 210.25
-    L 305 211.25
-    L 308.268 212.25
-    L 307.5 215.58
+    M 362.5 225.08
+    L 365 227.41
+    L 364.232 224.08
+    L 367.5 223.08
+    L 364.232 222.08
+    L 365 218.75
+    L 362.5 221.08
+    L 360 218.75
+    L 360.768 222.08
+    L 357.5 223.08
+    L 360.768 224.08
+    L 360 227.41
     z
     "/>
     </g>
@@ -1039,18 +1039,18 @@
     <g fill="none" stroke="#ffbe18" stroke-opacity="1" stroke-width="5" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" transform="matrix(1,0,0,1,8,8)"
     >
     <path  d="
-    M 310 213.25
-    L 312.5 215.58
-    L 311.732 212.25
-    L 315 211.25
-    L 311.732 210.25
-    L 312.5 206.92
-    L 310 209.25
-    L 307.5 206.92
-    L 308.268 210.25
-    L 305 211.25
-    L 308.268 212.25
-    L 307.5 215.58
+    M 362.5 225.08
+    L 365 227.41
+    L 364.232 224.08
+    L 367.5 223.08
+    L 364.232 222.08
+    L 365 218.75
+    L 362.5 221.08
+    L 360 218.75
+    L 360.768 222.08
+    L 357.5 223.08
+    L 360.768 224.08
+    L 360 227.41
     z
     "/>
     </g>

@@ -79,10 +79,8 @@ class FeedbackForm extends FormBase {
     ];
 
     $form['agree'] = array(
-      '#type' => 'checkboxes',
-      '#options' => array(
-        t('I agree to receive occasional informational e-mails regarding the topic of the book'),
-        ),  
+      '#type' => 'checkbox',
+      '#title' => 'I agree to receive occasional informational e-mails regarding the topic of the book',
     );
 
     $form['actions']['submit'] = [
@@ -133,7 +131,7 @@ class FeedbackForm extends FormBase {
       'field_company' => $company,
       'field_company_size' => $size,
       'field_industry' => $industry,
-      'field_agree'=> $agree,
+      'field_iagree'=> $agree,
     ]);
     $node->save();
  
@@ -145,6 +143,7 @@ class FeedbackForm extends FormBase {
     $bod = $form_state->getValue('name');
     $company = $form_state->getValue('company');
     $size = $form_state->getValue('company_size');
+    $agree = $form_state->getValue('agree');
     
     $node = Node::create([
       'type' => 'questionnaire',
@@ -153,7 +152,7 @@ class FeedbackForm extends FormBase {
       'field_company' => $company,
       'field_company_size' => $size,
       'field_industry' => $industry,
-      'field_agree'=> $agree,
+      'field_iagree'=> $agree,
     ]);
     $node->save();
 
