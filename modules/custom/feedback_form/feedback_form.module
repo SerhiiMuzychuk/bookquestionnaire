@@ -21,13 +21,13 @@
 
   function comment_discussion_comment_delete_submit(array $form, FormStateInterface $form_state) {
     $image = new Imagick();
-    $image->readImageBlob(file_get_contents('test.svg'));
+    $image->readImageBlob(file_get_contents('chart.svg'));
     $image->setImageFormat("png24");
-    $image->writeImage('test.png');
+    $image->writeImage('chart.png');
   }
 
   /**
-   * Implements hook_mail().
+   * Implements hook_mail().s
    */
 
   function feedback_form_mail($key, &$message, $params) {

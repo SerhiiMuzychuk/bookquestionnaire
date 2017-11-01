@@ -14,7 +14,11 @@ function kogan_theme($existing, $type, $theme, $path) {
 }
   
 
+
+
 function kogan_preprocess_node__questionnaire(&$variables) {
+
+	$variables['frontx'] = $variables['node']->get('field_frontx')->value;
 	$variables['title'] = $variables['node']->get('title')->value;
 	$variables['name'] = $variables['node']->get('field_name')->value;
 	$variables['industry'] = $variables['node']->get('field_industry')->value;
@@ -22,101 +26,55 @@ function kogan_preprocess_node__questionnaire(&$variables) {
 	$variables['company_size'] = $variables['node']->get('field_company_size')->value;
 	$variables['created'] = $variables['node']->get('created')->value;
 	$variables['agree'] = $variables['node']->get('field_iagree')->value;
+	$variables['fronty'] = $variables['node']->get('field_fronty')->value;
+	$variables['backx'] = $variables['node']->get('field_backx')->value;
+	$variables['backy'] = $variables['node']->get('field_backy')->value;
+	$variables['monetx'] = $variables['node']->get('field_monetx')->value;
+	$variables['monety'] = $variables['node']->get('field_monety')->value;
+	$variables['targetx'] = $variables['node']->get('field_targetx')->value;
+	$variables['targety'] = $variables['node']->get('field_targety')->value;
+	$variables['targetx2'] = $variables['node']->get('field_targetx2')->value;
+	$variables['targety2'] = $variables['node']->get('field_targety2')->value;
+	$variables['arrowx1'] = $variables['node']->get('field_arrowx1')->value;
+	$variables['arrowx2'] = $variables['node']->get('field_arrowx2')->value;
+	$variables['arrowy1'] = $variables['node']->get('field_arrowy1')->value;
+	$variables['arrowy2'] = $variables['node']->get('field_arrowy2')->value;
+	$variables['backx2'] = $variables['node']->get('field_backx2')->value;
+	$variables['backy2'] = $variables['node']->get('field_backy2')->value;
+	$variables['monetx2'] = $variables['node']->get('field_monetx2')->value;
+	$variables['monety2'] = $variables['node']->get('field_monety2')->value;
+	$variables['frontx2'] = $variables['node']->get('field_frontx')->value;
+	$variables['fronty2'] = $variables['node']->get('field_fronty2')->value;
 
-  $keys = [
-    'titletargety',
-    'titlefronty',
-    'titlebacky',
-    'titlemonety',
-    'arrowx1',
-    'arrowy1',
-    'arrowx2',
-    'arrowy2',
-    'frontx',
-    'backx',
-    'monetx',
-    'fronty',
-    'backy',
-    'monety',
-    'targetx',
-    'targety',
-    'feedback',
-    'question1',
-    'question2',
-    'question3',
-    'question4',
-    'question5',
-    'question6',
-    'question7',
-    'question8',
-    'question9',
-    'question10',
-    'question11',
-    'question12',
-    'question13',
-    'question14',
-    'question15',
-    'question101',
-    'question102',
-    'question103',
-    'question104',
-    'question105',
-    'question106',
-    'question107',
-    'question108',
-    'question109',
-    'question110',
-    'question111',
-    'question112',
-    'question113',
-    'question114',
-	];
+	$variables['question101'] = $variables['node']->get('field_question101')->value;
+	$variables['question102'] = $variables['node']->get('field_question102')->value;
+	$variables['question103'] = $variables['node']->get('field_question103')->value;
+	$variables['question104'] = $variables['node']->get('field_question104')->value;
+	$variables['question105'] = $variables['node']->get('field_question105')->value;
+	$variables['question106'] = $variables['node']->get('field_question106')->value;
+	$variables['question107'] = $variables['node']->get('field_question107')->value;
+	$variables['question108'] = $variables['node']->get('field_question108')->value;
+	$variables['question109'] = $variables['node']->get('field_question109')->value;
+	$variables['question110'] = $variables['node']->get('field_question110')->value;
+	$variables['question111'] = $variables['node']->get('field_question111')->value;
+	$variables['question112'] = $variables['node']->get('field_question112')->value;
+	$variables['question113'] = $variables['node']->get('field_question113')->value;
+	$variables['question114'] = $variables['node']->get('field_question114')->value;
 
-	$val = \Drupal::state()->getMultiple($keys);
-	$variables['frontx'] = $val['frontx'];
-	$variables['backx'] = $val['backx'];
-	$variables['monetx'] = $val['monetx'];
-	$variables['fronty'] = $val['fronty'];
-	$variables['backy'] = $val['backy'];
-	$variables['monety'] = $val['monety'];
-	$variables['targetx'] = $val['targetx'];
-	$variables['targety'] = $val['targety'];
-	$variables['arrowx1'] = $val['arrowx1'];
-	$variables['arrowy1'] = $val['arrowy1'];
-	$variables['arrowx2'] = $val['arrowx2'];
-	$variables['arrowy2'] = $val['arrowy2'];
-	$variables['titletargety'] = $val['titletargety'];
-	$variables['titlefronty'] = $val['titlefronty'];
-	$variables['titlebacky'] = $val['titlebacky'];
-	$variables['titlemonety'] = $val['titlemonety'];
-	$variables['question1'] = $val['question1'];
-	$variables['question2'] = $val['question2'];
-	$variables['question3'] = $val['question3'];
-	$variables['question4'] = $val['question4'];
-	$variables['question5'] = $val['question5'];
-	$variables['question6'] = $val['question6'];
-	$variables['question7'] = $val['question7'];
-	$variables['question8'] = $val['question8'];
-	$variables['question9'] = $val['question9'];
-	$variables['question10'] = $val['question10'];
-	$variables['question11'] = $val['question11'];
-	$variables['question12'] = $val['question12'];
-	$variables['question13'] = $val['question13'];
-	$variables['question14'] = $val['question14'];
-	$variables['question15'] = $val['question15'];
-	$variables['question101'] = $val['question101'];
-	$variables['question102'] = $val['question102'];
-	$variables['question103'] = $val['question103'];
-	$variables['question104'] = $val['question104'];
-	$variables['question105'] = $val['question105'];
-	$variables['question106'] = $val['question106'];
-	$variables['question107'] = $val['question107'];
-	$variables['question108'] = $val['question108'];
-	$variables['question109'] = $val['question109'];
-	$variables['question110'] = $val['question110'];
-	$variables['question111'] = $val['question111'];
-	$variables['question112'] = $val['question112'];
-	$variables['question113'] = $val['question113'];
-	$variables['question114'] = $val['question114'];
+	$variables['question1'] = $variables['node']->get('field_question1')->value;
+	$variables['question2'] = $variables['node']->get('field_question2')->value;
+	$variables['question3'] = $variables['node']->get('field_question3')->value;
+	$variables['question4'] = $variables['node']->get('field_question4')->value;
+	$variables['question5'] = $variables['node']->get('field_question5')->value;
+	$variables['question6'] = $variables['node']->get('field_question6')->value;
+	$variables['question7'] = $variables['node']->get('field_question7')->value;
+	$variables['question8'] = $variables['node']->get('field_question8')->value;
+	$variables['question9'] = $variables['node']->get('field_question9')->value;
+	$variables['question10'] = $variables['node']->get('field_question10')->value;
+	$variables['question11'] = $variables['node']->get('field_question11')->value;
+	$variables['question12'] = $variables['node']->get('field_question12')->value;
+	$variables['question13'] = $variables['node']->get('field_question13')->value;
+	$variables['question14'] = $variables['node']->get('field_question14')->value;
+	$variables['question15'] = $variables['node']->get('field_question15')->value;
 
-}
+ }
