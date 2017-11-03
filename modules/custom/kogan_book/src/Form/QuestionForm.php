@@ -2368,7 +2368,7 @@ public function submitForm(array &$form, FormStateInterface $form_state) {
     </svg>
     ';
 
-  file_put_contents("chart.svg", $text);
+  file_put_contents("images/chart.svg", $text);
 
   $form_state->setRedirect('kogan_book.resultpage', [
     'frontx' => $frontx,

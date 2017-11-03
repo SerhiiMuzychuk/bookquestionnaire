@@ -60,6 +60,7 @@ function kogan_book_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
 
 
 function kogan_book_theme($existing, $type, $theme, $path) {
+  
   return array(    
     'page_result' => array(
       'variables' => array(

@@ -7,6 +7,7 @@
   use Drupal\node\Entity\Node;
   use Drupal\file\Entity\File;
   use Drupal\Core\Form\FormStateInterface;
+  use Drupal\Core\Url;
 
 
 
@@ -21,9 +22,55 @@
 
   function comment_discussion_comment_delete_submit(array $form, FormStateInterface $form_state) {
     $image = new Imagick();
-    $image->readImageBlob(file_get_contents('chart.svg'));
+    $image->readImageBlob(file_get_contents('images/chart.svg'));
     $image->setImageFormat("png24");
-    $image->writeImage('chart.png');
+    // if(file_exists('chart.png')) {
+    //   $i = 1;
+    //   $i=$i + 1;
+    //   $image->writeImage('chart'.$i.'.png');
+    // }
+    $name = 'chart.png';
+    $actual_name = pathinfo($name,PATHINFO_FILENAME);
+    $original_name = $actual_name;
+    $extension = pathinfo($name, PATHINFO_EXTENSION);
+
+    $i = 1;
+    while(file_exists('images/'.$actual_name.".".$extension))
+    {           
+        $actual_name = (string)$original_name.$i;
+        $name = $actual_name.".".$extension;
+        $i++;
+    }
+
+    $image->writeImage('images/'.$name.'');
+
+    $host = \Drupal::request()->getHost();
+    $url_image = 'http://' . $host . '/images/'. $name .'';
+    \Drupal::state()->set('imageresult', $url_image);
+    
+    // function imageExists($image,$dir) {
+
+    //   $i=1; $probeer= $image;
+
+    //   while(file_exists($dir.$probeer)) {
+    //       kint($dir);
+    //       die();
+    //       $punt=strrpos($image,".");
+    //       if(substr($image,($punt-3),1)!==("[") && substr($image,($punt-1),1)!==("]")) {
+    //           $probeer=substr($image,0,$punt)."[".$i."]".
+    //           substr($image,($punt),strlen($image)-$punt);
+    //       } else {
+    //           $probeer=substr($image,0,($punt-3))."[".$i."]".
+    //           substr($image,($punt),strlen($image)-$punt);
+    //       }
+    //       $i++;        
+    //   }
+    //   // $image->writeImage(''.$probeer.'.png');
+    //   return $probeer;
+    // }
+
+
+
   }
 
   /**
@@ -31,6 +78,8 @@
    */
 
   function feedback_form_mail($key, &$message, $params) {
+    $val['imageresult'] = \Drupal::state()->get('imageresult');
+    $images = $val['imageresult'];
     $options = array (
       'langcode' => $message['langcode'],
     );
@@ -44,6 +93,7 @@
           $options);
         $theme_body = array (
           '#theme' => 'comment_alert_mail',
+          '#text' => $images,
           '#title' => $params['node_title'],
         );
         $mail_body = drupal_render($theme_body);
@@ -119,9 +169,11 @@
     'question112',
     'question113',
     'question114',
+    'imageresult',
   ];
 
   $val = \Drupal::state()->getMultiple($keys);
+  $variables['imageresult'] = $val['imageresult'];
   $variables['frontx'] = $val["frontx"];
   $variables['backx'] = $val['backx'];
   $variables['monetx'] = $val['monetx'];
@@ -251,6 +303,7 @@
 
     'comment_alert_mail' => [
       'variables' => [
+        'text' => null,
         'arrowx1' => null,
         'arrowy1' => null,
         'arrowx2' => null,
@@ -293,6 +346,7 @@
         'question112' => null,
         'question113' => null,
         'question114' => null,
+        'imageresult' => null,
       ],
     ],
   ];
