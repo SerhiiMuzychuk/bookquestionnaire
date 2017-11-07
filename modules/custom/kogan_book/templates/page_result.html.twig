@@ -38,7 +38,7 @@ text {
 
 .data {
   fill: #ffbe18;
-  stroke-width: 1; 
+  stroke-width: 1;
 }
 
 @media screen and (max-width: 1599px) and (min-width: 1100px)  {
@@ -71,15 +71,15 @@ text {
 <h1 class="step-3-title">Step 3: Design your transformation path</h1>
 <p class="step1-main-text">The displayed figure specifies the transformation path, which connects the transformation journey’s starting point and end point. It is very rare for business model transformation to be a linear, one-step process. It might be worth considering a stepwise approach to manage the transformation. However, no matter how the transformation path is designed, it is important for the leadership team to never lose sight of their aims. Thus, the presented Figure is simple but effective tool for discussing the transformation path in a workshop. (<a href="#bottom" class="step3-text-link orange-text">get full report</a>)</p>
 
-  
+
 <svg id="test" version="1.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="graph" aria-labelledby="title" role="img" viewbox=" 0 0 100 100" >
   <defs>
-    <marker id="arrowhead" markerWidth="5" markerHeight="3.5" 
+    <marker id="arrowhead" markerWidth="5" markerHeight="3.5"
     refX="0.1" refY="1.75" orient="auto" >
       <polygon points="0 0, 5 1.75, 0 3.5" fill="#ffbe18"/>
     </marker>
   </defs>
-  
+
   <title id="title">A line chart showing some information</title>
 
 <g class="grid x-grid" id="xGrid">
@@ -168,21 +168,21 @@ score</text>
 
 
 <g class="data" data-setname="Our first data set">
-	
+
  <polygon points="{{ frontx }},{{ fronty }} {{ backx }},{{ backy }} {{ monetx }},{{ monety }}" style="fill:#ffbe18;stroke:white;stroke-width:0.3" />
   <defs>
-    <marker id="arrow" markerWidth="5" markerHeight="5" refX="2" refY="2" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,4 L5,2 z" fill="#ffbe18" />
+    <marker id="arrow" markerWidth="4" markerHeight="4" refX="2.2" refY="2" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,4 L3.2,2 z" fill="#ffbe18" />
     </marker>
   </defs>
 
-  <line x1="{{ arrowx1 }}" y1="{{ arrowy1 }}" x2="{{ arrowx2 }}" y2="{{ arrowy2 }}" stroke="#fff" stroke-width="1" marker-end="url(#arrow)" />
+  <line x1="{{ center_trianglex }}" y1="{{ center_triangley }}" x2="{{ arrowx2 }}" y2="{{ arrowy2 }}" stroke="#fff" stroke-width="1" marker-end="url(#arrow)"  stroke-opacity="0.85" />
   <text x="{{ frontx }}" y="{{ fronty }}" dy=".35em">Front end</text>
   <text x="{{ backx }}" y="{{ titlebacky }}" dy=".35em">Back-end</text>
   <text x="{{ monetx }}" y="{{ titlemonety }}" dy=".35em">Monetization</text>
   <text x="{{ targetx }}" y="{{ titletargety }}" dy=".35em">Target position</text>
 
-  <image xlink:href="/themes/custom/kogan/images/star.png" x="{{ targetx }}" y="{{ targety }}" height="4" width="4"/>
+  <image xlink:href="/themes/custom/kogan/images/star.png" x="{{ targetx }}" y="{{ targetystar }}" height="4" width="4"/>
 
 </g>
 </svg>
@@ -203,7 +203,7 @@ score</text>
     </div>
 
     <div class="feedback">
-      {{ feedback }} 
+      {{ feedback }}
     </div>
 
     <div class="send-res">
@@ -223,7 +223,7 @@ score</text>
     </div>
     <div class="share-linkedin">
     	<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ base_url }}&title=sdsadsa&summary=&source="><img class="facebook-share" src="/themes/custom/kogan/images/linkedin-3-xxl.png" style="height: 30px"><span>Share on Linkedin</span></a>
-    </div>  
+    </div>
   </div>
 </div>
 

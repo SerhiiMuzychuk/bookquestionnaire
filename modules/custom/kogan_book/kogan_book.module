@@ -4,7 +4,6 @@ use Drupal\Core\Url;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Form\FormBase;
 use Drupal\Component\Utility\UrlHelper;
-
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\node\Entity\Node;
@@ -12,7 +11,6 @@ use Drupal\Core\Mail\MailManagerInterface;
 use Drupal\Component\Utility\SafeMarkup;
 use Drupal\Component\Utility\Html;
 use Drupal\file\Entity\File;
-
 
 
 
@@ -27,9 +25,9 @@ function kogan_book_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
   }
 
   if ($form_id == 'user_register_form') {
-    $form['field_monthly']['widget'][0]['value']['#title']= t('Dailling code');    
-	$form['actions']['submit']['#submit'][] = 'oil_survey_contact_submit';
-	$form['actions']['submit']['#value'] = t('Next step');
+    $form['field_monthly']['widget'][0]['value']['#title']= t('Dailling code');
+    $form['actions']['submit']['#submit'][] = 'oil_survey_contact_submit';
+    $form['actions']['submit']['#value'] = t('Next step');
     $form['account']['mail']['#description'] = t('');
     $form['account']['pass']['#description'] = t('');
     $form['account']['mail']['#attributes']['placeholder'] = t('please fill...');
@@ -44,26 +42,29 @@ function kogan_book_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
     $form['mail']['#value'] = t('');
   }
 
-  
+
 
 }
 
  function register_alter_form_alter(&$form, &$form_state, $form_id) {
   switch ($form_id) {
      case 'user_register_form':
-       $form['account']['pass']['#process'][] = array('form_process_password_confirm', 'register_alter_password_confirm');       
+       $form['account']['pass']['#process'][] = array('form_process_password_confirm', 'register_alter_password_confirm');
   }
-  
-	
+
+
 }
 
 
 
 function kogan_book_theme($existing, $type, $theme, $path) {
-  
-  return array(    
+
+  return array(
     'page_result' => array(
       'variables' => array(
+        'targetystar' => null,
+        'center_trianglex' => null,
+        'center_triangley' => null,
         'titletargety' => null,
         'titlefronty' => null,
         'titlebacky' => null,
@@ -113,8 +114,8 @@ function kogan_book_theme($existing, $type, $theme, $path) {
         'question114' => null,
         ),
       'template' => 'page_result',
-    ),          
-    
+    ),
+
     'content_block' => array(
       'template' => 'content_block',
       'variables' => array(
@@ -122,10 +123,10 @@ function kogan_book_theme($existing, $type, $theme, $path) {
         'items1' => null,
         'items2' => null,
         'itemsy' => null,
-	      'itemsy1' => null,
-	      'itemsy2' => null,
-	      'itemsz1' => null,
-      	'itemsz2' => null,
+        'itemsy1' => null,
+        'itemsy2' => null,
+        'itemsz1' => null,
+        'itemsz2' => null,
       ),
     ),
 

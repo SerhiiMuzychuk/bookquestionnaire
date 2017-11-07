@@ -45,7 +45,7 @@
     $image->writeImage('images/'.$name.'');
 
     $host = \Drupal::request()->getHost();
-    $url_image = 'http://' . $host . '/images/'. $name .'';
+    $url_image = 'http://' . $host . '/images/chart-default.png';
     \Drupal::state()->set('imageresult', $url_image);
     
     // function imageExists($image,$dir) {

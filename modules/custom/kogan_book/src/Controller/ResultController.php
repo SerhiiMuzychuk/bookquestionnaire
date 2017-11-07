@@ -7,7 +7,7 @@
 namespace Drupal\kogan_book\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
-use Drupal\oil_survey\Form\QuestionForm; 
+use Drupal\oil_survey\Form\QuestionForm;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\core\modules\user\src\Form;
 use \Drupal\Core\Form\FormBase;
@@ -68,21 +68,27 @@ class ResultController extends ControllerBase {
     $y2 = 86 - $monety*14;
     $z1 = $targetx*14 + 13;
     $z2 = 86 - $targety*14;
-    $titlefronty = $y - 3;
-    $titlebacky = $y1 + 3;
-    $titlemonety = $y2 - 3;
-    $titletargety = $z2 - 3;
+    $titlefronty = $y - 1;
+    $titlebacky = $y1;
+    $titlemonety = $y2;
+    $titletargety = $z2 - 2;
+    $targetystar = 85 - $targety*14;
 
-    $arrowx1 = $x + 7;
-    $arrowy1 = $y - 5;
-    $arrowx2 = $z1 - 7;
-    $arrowy2 = $z2 + 9;
+    $center_trianglex = ($x + $x1 + $x2)/3;
+    $center_triangley = ($y + $y1 + $y2)/3;
+
+    $arrowx1 = $x + 1;
+    $arrowy1 = $y - 1;
+    $arrowx2 = $z1 +1;
+    $arrowy2 = $z2 + 3.5;
 
     $feedback = Block::load('getthefullreportandadiscountcodeforthebook');
    	$block = \Drupal::entityTypeManager()->getViewBuilder('block')->view($feedback);
    	$xelll = t('hello');
 
-   	$koord = [
+    $koord = [
+      'center_trianglex' => $center_trianglex,
+      'center_triangley' => $center_triangley,
       'titletargety' => $titletargety,
       'titlefronty' => $titlefronty,
       'titlebacky' => $titlebacky,
@@ -100,6 +106,7 @@ class ResultController extends ControllerBase {
       'arrowy1' => $arrowy1,
       'arrowx2' => $arrowx2,
       'arrowy2' => $arrowy2,
+      'targetystar' => $targetystar,
       // '#question1' => $question1,
       // '#question2' => $question2,
       // '#question3' => $question3,
@@ -131,12 +138,14 @@ class ResultController extends ControllerBase {
       // '#question114' => $question114,
    	];
 
-	\Drupal::state()->setMultiple($koord);	
+	\Drupal::state()->setMultiple($koord);
       global $base_url;
       $variables['base_url'] = $base_url;
 
     return array(
       '#theme' => 'page_result',
+      '#center_trianglex' => $center_trianglex,
+      '#center_triangley' => $center_triangley,
       '#titletargety' => $titletargety,
       '#titlefronty' => $titlefronty,
       '#titlebacky' => $titlebacky,
@@ -155,6 +164,7 @@ class ResultController extends ControllerBase {
       '#arrowy1' => $arrowy1,
       '#arrowx2' => $arrowx2,
       '#arrowy2' => $arrowy2,
+      '#targetystar' => $targetystar,
       '#question1' => $question1,
       '#question2' => $question2,
       '#question3' => $question3,
@@ -185,6 +195,6 @@ class ResultController extends ControllerBase {
       '#question113' => $question113,
       '#question114' => $question114,
     );
-  }  
+  }
 
 }
